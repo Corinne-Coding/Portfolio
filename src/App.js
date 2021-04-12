@@ -3,24 +3,24 @@ import { useState } from "react";
 // Components
 import ToggleButton from "./components/ToggleButton/ToggleButton";
 import Link from "./components/Link/Link";
+import Part from "./components/Part/Part";
 
 // Icons
-import logo from "./img/logo.svg";
+import logoEnglish from "./img/logo-en.svg";
+import logoFrench from "./img/logo-fr.svg";
 
 // Data
 import json from "./data.json";
 
 function App() {
   const [language, setLanguage] = useState(true);
-  // const [data, setData] = useState(language ? json.english : json.french);
-  const [data, setData] = useState(json);
+  const [data] = useState(json);
   const [content, setContent] = useState(true);
-  console.log(data);
 
   return (
     <div className="app">
       <header>
-        <img src={logo} alt="logo" />
+        <img src={language ? logoEnglish : logoFrench} alt="logo" />
 
         <div>
           <ul>
@@ -41,11 +41,10 @@ function App() {
         </div>
       </header>
 
-      <section style={{ color: "white" }}></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
+      <Part particles={true} />
+      <Part particles={false} />
+      <Part particles={false} />
+      <Part particles={false} />
     </div>
   );
 }

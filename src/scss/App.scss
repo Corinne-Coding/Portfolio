@@ -20,15 +20,12 @@ header ul {
   align-items: center;
 }
 
-section {
-  height: calc(100vh - 6rem);
-  width: 100vw;
-}
-
+// Sections
 .app section:nth-child(2) {
   background: linear-gradient(
     to top right,
-    $gradient-orange 1%,
+    $gradient-orange,
+    #3c2e3f,
     $dark-blue-color,
     $dark-blue-color,
     $dark-blue-color,
@@ -38,16 +35,9 @@ section {
 }
 
 .app section:nth-child(3) {
-  background-color: red;
-}
-
-.app section:nth-child(3) {
-  background-color: orange;
+  background-color: brown;
 }
 
 .app section:nth-child(4) {
-  background-color: blue;
+  background-color: black;
 }
-
-// border: pink solid 3px;
-// box-sizing: border-box;
