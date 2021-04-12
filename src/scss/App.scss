@@ -1,0 +1,53 @@
+@import "../scss/variables.scss";
+
+// Header
+header {
+  background-color: $dark-blue-color;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+}
+
+header > img {
+  height: 3rem;
+}
+
+header div,
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+section {
+  height: calc(100vh - 6rem);
+  width: 100vw;
+}
+
+.app section:nth-child(2) {
+  background: linear-gradient(
+    to top right,
+    $gradient-orange 1%,
+    $dark-blue-color,
+    $dark-blue-color,
+    $dark-blue-color,
+    $dark-blue-color,
+    $dark-blue-color
+  );
+}
+
+.app section:nth-child(3) {
+  background-color: red;
+}
+
+.app section:nth-child(3) {
+  background-color: orange;
+}
+
+.app section:nth-child(4) {
+  background-color: blue;
+}
+
+// border: pink solid 3px;
+// box-sizing: border-box;

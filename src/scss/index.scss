@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $main-font, "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

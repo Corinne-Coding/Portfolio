@@ -1,0 +1,16 @@
+{
+  "french": {
+    "header": [
+      { "text": "à propos de moi", "icon": "sun" },
+      { "text": "projets", "icon": "grid" },
+      { "text": "contact", "icon": "message" }
+    ]
+  },
+  "english": {
+    "header": [
+      { "text": "about me", "icon": "sun" },
+      { "text": "projects", "icon": "grid" },
+      { "text": "contact", "icon": "message" }
+    ]
+  }
+}
