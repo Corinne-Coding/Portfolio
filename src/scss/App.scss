@@ -7,37 +7,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 6rem;
-}
-
-header > img {
-  height: 3rem;
+  padding: 0 4rem;
 }
 
 header div,
 header ul {
   display: flex;
   align-items: center;
-}
-
-// Sections
-.app section:nth-child(2) {
-  background: linear-gradient(
-    to top right,
-    $gradient-orange,
-    #3c2e3f,
-    $dark-blue-color,
-    $dark-blue-color,
-    $dark-blue-color,
-    $dark-blue-color,
-    $dark-blue-color
-  );
-}
-
-.app section:nth-child(3) {
-  background-color: brown;
-}
-
-.app section:nth-child(4) {
-  background-color: black;
 }

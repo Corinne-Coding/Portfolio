@@ -4,16 +4,22 @@
   font-size: 1.6rem;
 }
 
+.link:hover span {
+  color: $dark-orange-color;
+}
+
 .link a {
   text-decoration: none;
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 
 .link img {
   vertical-align: middle;
   margin-right: 0.5rem;
+  font-size: 1rem;
 }
 
 .link span {
   color: white;
+  transition: all 0.3s ease-in-out;
 }

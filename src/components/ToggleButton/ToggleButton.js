@@ -1,6 +1,6 @@
 import "./ToggleButton.scss";
 
-const ToggleButton = ({ content, setContent, language, setLanguage }) => {
+const ToggleButton = ({ language, setLanguage }) => {
   return (
     <div className="toggle-button">
       <label className="switch">
@@ -8,7 +8,6 @@ const ToggleButton = ({ content, setContent, language, setLanguage }) => {
           type="checkbox"
           onClick={() => {
             setLanguage(!language);
-            setContent(!content);
           }}
         />
         <span className="slider round"></span>

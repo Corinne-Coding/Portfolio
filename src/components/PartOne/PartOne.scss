@@ -1,0 +1,50 @@
+@import "../../scss/variables.scss";
+
+.particles {
+  height: calc(100vh - 6rem) !important;
+}
+
+.part-one {
+  height: calc(100vh - 6rem);
+  position: relative;
+  background: linear-gradient(
+    to top right,
+    $gradient-orange-color,
+    $dark-blue-color,
+    $dark-blue-color,
+    $dark-blue-color,
+    $dark-blue-color,
+    $dark-blue-color
+  );
+}
+
+.part-one .titles {
+  color: $white-color;
+  position: absolute;
+  top: 30%;
+  padding: 0 4rem;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  font-family: $baskerville-font;
+  animation: rightApparition 4s;
+  width: 100%;
+}
+@keyframes rightApparition {
+  from {
+    margin-left: 50%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+
+.part-one .titles h2 {
+  font-size: 3rem;
+}

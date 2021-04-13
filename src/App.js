@@ -3,7 +3,7 @@ import { useState } from "react";
 // Components
 import ToggleButton from "./components/ToggleButton/ToggleButton";
 import Link from "./components/Link/Link";
-import Part from "./components/Part/Part";
+import PartOne from "./components/PartOne/PartOne";
 
 // Icons
 import logoEnglish from "./img/logo-en.svg";
@@ -13,9 +13,9 @@ import logoFrench from "./img/logo-fr.svg";
 import json from "./data.json";
 
 function App() {
-  const [language, setLanguage] = useState(true);
   const [data] = useState(json);
-  const [content, setContent] = useState(true);
+  // true = english / false = french
+  const [language, setLanguage] = useState(true);
 
   return (
     <div className="app">
@@ -24,7 +24,7 @@ function App() {
 
         <div>
           <ul>
-            {content
+            {language
               ? data.english.header.map((item, index) => {
                   return <Link key={index} text={item.text} icon={item.icon} />;
                 })
@@ -32,19 +32,11 @@ function App() {
                   return <Link key={index} text={item.text} icon={item.icon} />;
                 })}
           </ul>
-          <ToggleButton
-            language={language}
-            setLanguage={setLanguage}
-            content={content}
-            setContent={setContent}
-          />
+          <ToggleButton language={language} setLanguage={setLanguage} />
         </div>
       </header>
 
-      <Part particles={true} />
-      <Part particles={false} />
-      <Part particles={false} />
-      <Part particles={false} />
+      <PartOne data={data} language={language} />
     </div>
   );
 }
