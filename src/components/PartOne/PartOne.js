@@ -14,7 +14,7 @@ const Part = ({ data, language }) => {
             params={{
               particles: {
                 number: {
-                  value: 400,
+                  value: 200,
                   density: {
                     enable: true,
                     value_area: 1500,
@@ -22,7 +22,7 @@ const Part = ({ data, language }) => {
                 },
                 line_linked: {
                   enable: true,
-                  opacity: 0.02,
+                  opacity: 0.04,
                 },
                 move: {
                   speed: 0.05,

@@ -1,17 +1,17 @@
 {
   "french": {
     "header": [
-      { "text": "À propos de moi" },
-      { "text": "Mes projets" },
-      { "text": "Me contacter" }
+      { "text": "à propos de moi" },
+      { "text": "mes projets" },
+      { "text": "me contacter" }
     ],
     "mainTitle": "Développeuse Front-End | Web & Mobile"
   },
   "english": {
     "header": [
-      { "text": "About me" },
-      { "text": "My projects" },
-      { "text": "Contact me" }
+      { "text": "about me" },
+      { "text": "my projects" },
+      { "text": "contact me" }
     ],
     "mainTitle": "Front-End developer | Web & Mobile"
   }

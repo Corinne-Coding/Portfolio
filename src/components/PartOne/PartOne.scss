@@ -48,12 +48,20 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: flex-end;
   color: $white-color;
 }
 
 .part-one .menu h3 {
+  text-align: justify;
   animation: fadeIn 8s;
+  cursor: pointer;
+  position: relative;
+  padding: 2rem 0;
+  overflow: hidden;
 }
+
+/* Titles apparition */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -61,4 +69,36 @@ h1 {
   to {
     opacity: 1;
   }
+}
+
+/* Lines around titles when hover */
+.part-one .menu h3::before,
+.part-one .menu h3::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    $main-dark-bg-color,
+    $main-light-color,
+    $main-color,
+    $main-light-color,
+    $main-dark-bg-color
+  );
+  transition: all 0.6s ease-in-out;
+  width: 100%;
+  height: 0.2rem;
+}
+.part-one .menu h3::before {
+  left: -100%;
+  top: 0;
+}
+.part-one .menu h3::after {
+  bottom: 0;
+  right: -100%;
+}
+.part-one .menu h3:hover::before {
+  left: 0;
+}
+.part-one .menu h3:hover::after {
+  right: 0;
 }
