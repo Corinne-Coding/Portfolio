@@ -1,17 +1,1 @@
 @import "../scss/variables.scss";
-
-// Header
-header {
-  background-color: $dark-blue-color;
-  height: 6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 4rem;
-}
-
-header div,
-header ul {
-  display: flex;
-  align-items: center;
-}

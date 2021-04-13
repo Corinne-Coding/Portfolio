@@ -1,35 +1,30 @@
 @import "../../scss/variables.scss";
 
 .particles {
-  height: calc(100vh - 6rem) !important;
+  height: 100vh !important;
 }
 
 .part-one {
-  height: calc(100vh - 6rem);
+  height: 100vh;
   position: relative;
+  background-position: 0% 0%;
   background: linear-gradient(
     to top right,
-    $gradient-orange-color,
-    $dark-blue-color,
-    $dark-blue-color,
-    $dark-blue-color,
-    $dark-blue-color,
-    $dark-blue-color
+    $gradient-main-color,
+    $main-dark-bg-color 40%
   );
 }
 
+/* Titles */
 .part-one .titles {
   color: $white-color;
   position: absolute;
-  top: 30%;
+  top: 30vh;
   padding: 0 4rem;
 }
 
 h1 {
-  font-size: 8rem;
-  font-weight: 700;
   margin-bottom: 2rem;
-  font-family: $baskerville-font;
   animation: rightApparition 4s;
   width: 100%;
 }
@@ -38,13 +33,32 @@ h1 {
     margin-left: 50%;
     opacity: 0;
   }
-
   to {
     margin-left: 0%;
     opacity: 1;
   }
 }
 
-.part-one .titles h2 {
-  font-size: 3rem;
+/* Menu */
+.part-one .menu {
+  position: absolute;
+  top: 0;
+  right: 10rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: $white-color;
+}
+
+.part-one .menu h3 {
+  animation: fadeIn 8s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

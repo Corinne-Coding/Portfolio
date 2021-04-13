@@ -25,7 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $light-blue-color;
+  background-color: $main-color;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -33,7 +33,7 @@
 .text-1 {
   position: absolute;
   z-index: 2;
-  color: $dark-blue-color;
+  color: $main-bg-color;
   right: 9px;
   top: 7px;
   font-size: 1.6rem;
@@ -42,7 +42,7 @@
 .text-2 {
   position: absolute;
   z-index: 2;
-  color: $dark-blue-color;
+  color: $main-bg-color;
   left: 7px;
   top: 6px;
   font-size: 1.6rem;
@@ -61,11 +61,11 @@
 }
 
 input:checked + .slider {
-  background-color: $dark-orange-color;
+  background-color: $main-bg-color;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px $dark-orange-color;
+  box-shadow: 0 0 1px $main-bg-color;
 }
 
 input:checked + .slider:before {
