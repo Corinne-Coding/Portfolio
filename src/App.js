@@ -9,7 +9,7 @@ import json from "./data.json";
 function App() {
   const [data] = useState(json);
   // true = english / false = french
-  const [language, setLanguage] = useState(false);
+  const [language, setLanguage] = useState(true);
 
   return (
     <>

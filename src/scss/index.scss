@@ -14,20 +14,26 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Hide scrollbar */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 /* Hide scrollbar */
 body::-webkit-scrollbar {
   display: none;
 }
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+
+a {
+  text-decoration: none;
+  color: $white-color;
 }
 
 h1 {
+  @extend %bold-baskerville;
   font-size: 8rem;
-  font-weight: 700;
-  font-family: $baskerville-font;
+  margin-bottom: 2rem;
+  animation: rightApparition 4s;
+  width: 100%;
 }
 
 h3 {

@@ -1,13 +1,57 @@
 // SCSS Variables
 
-// Fonts
+/* FONTS */
 $noto-font: "Noto Sans JP";
-$baskerville-font: "Libre Baskerville";
 
-// Colors
+%bold-baskerville {
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+}
+
+%reg-baskerville {
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+}
+
+/* COLORS */
 $main-dark-bg-color: #1c131d;
 $main-bg-color: #271b28;
 $gradient-main-color: rgb(52, 36, 54);
 $main-color: #ff952b;
 $main-light-color: #ffc386;
 $white-color: #fff;
+
+/* KEYFRAMES */
+/* Apparition from the right */
+@keyframes rightApparition {
+  from {
+    margin-left: 50%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+/* Titles apparition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Gradient */
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}

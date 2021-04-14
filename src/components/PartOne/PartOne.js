@@ -51,10 +51,18 @@ const Part = ({ data, language }) => {
         <div className="menu">
           {language
             ? data.english.header.map((item, index) => {
-                return <h3 key={index}>{item.text}</h3>;
+                return (
+                  <a href="#">
+                    <h3 key={index}>{item.text}</h3>
+                  </a>
+                );
               })
             : data.french.header.map((item, index) => {
-                return <h3 key={index}>{item.text}</h3>;
+                return (
+                  <a href="#">
+                    <h3 key={index}>{item.text}</h3>
+                  </a>
+                );
               })}
         </div>
       </section>
