@@ -25,11 +25,22 @@ $white-color: #fff;
 /* Apparition from the right */
 @keyframes rightApparition {
   from {
-    margin-left: 50%;
+    margin-left: 20%;
     opacity: 0;
   }
   to {
     margin-left: 0%;
+    opacity: 1;
+  }
+}
+/* Apparition from the top */
+@keyframes topApparition {
+  from {
+    margin-top: -20%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
     opacity: 1;
   }
 }

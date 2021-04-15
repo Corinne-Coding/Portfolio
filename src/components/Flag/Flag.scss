@@ -1,0 +1,20 @@
+.flag {
+  width: 2.5rem;
+}
+
+.flag:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .flag {
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flag {
+    width: 1.5rem;
+  }
+}

@@ -12,6 +12,16 @@
   animation: gradient 10s ease infinite;
   background-size: 150% 150%;
 
+  /* Flags */
+  .languages {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    img:first-child {
+      margin-right: 1vw;
+    }
+  }
+
   /* Titles */
   .titles {
     color: $white-color;
@@ -24,7 +34,7 @@
   .menu {
     position: absolute;
     top: 0;
-    right: 10rem;
+    right: 4rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -33,7 +43,7 @@
     color: $white-color;
     h3 {
       text-align: justify;
-      animation: fadeIn 8s;
+      animation: fadeIn 10s;
       cursor: pointer;
       position: relative;
       padding: 2rem 0;
@@ -68,6 +78,34 @@
     }
     h3:hover::after {
       right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .part-one {
+    /* Titles */
+    .titles {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 10rem;
+      width: 100%;
+      h1,
+      h2 {
+        text-align: center;
+      }
+    }
+    /* Menu */
+    .menu {
+      border: solid orange 3px;
+      height: auto;
+      top: 60%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      align-items: center;
+      h3 {
+        margin-bottom: 4rem;
+      }
     }
   }
 }

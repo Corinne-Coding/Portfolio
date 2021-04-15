@@ -4,7 +4,10 @@ import "./PartOne.scss";
 // Particles
 import Particles from "react-particles-js";
 
-const Part = ({ data, language }) => {
+// Components
+import Flag from "../Flag/Flag";
+
+const Part = ({ data, language, setLanguage }) => {
   return (
     <div className="portrait">
       <section className="part-one">
@@ -43,6 +46,12 @@ const Part = ({ data, language }) => {
             }}
           />
         }
+
+        <div className="languages">
+          <Flag flag="en" setLanguage={setLanguage} language={language} />
+          <Flag flag="fr" setLanguage={setLanguage} language={language} />
+        </div>
+
         <div className="titles">
           <h1>Corinne Pradier</h1>
           <h2>{language ? data.english.mainTitle : data.french.mainTitle}</h2>
