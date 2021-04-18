@@ -10,7 +10,7 @@ import json from "./data.json";
 import Particles from "react-particles-js";
 
 // Components
-
+import Link from "./components/Link/Link";
 import Flag from "./components/Flag/Flag";
 import AnimatedArrow from "./components/AnimatedArrow/AnimatedArrow";
 
@@ -18,94 +18,94 @@ function App() {
   const [data] = useState(json);
   // Languages : true = english / false = french
   const [language, setLanguage] = useState(true);
-  const [content, setContent] = useState("home");
+  const [content, setContent] = useState("main");
 
   return (
     <>
       <div className="scroll-snap-container">
-        <section className="home snap-element">
-          {
-            <Particles
-              className="particles"
-              params={{
-                particles: {
-                  number: {
-                    value: 200,
-                    density: {
-                      enable: true,
-                      value_area: 1500,
-                    },
-                  },
-                  line_linked: {
-                    enable: true,
-                    opacity: 0.04,
-                  },
-                  move: {
-                    speed: 0.05,
-                  },
-                  size: {
-                    value: 1,
-                  },
-                  opacity: {
-                    anim: {
-                      enable: true,
-                      speed: 1,
-                      opacity_min: 0.05,
-                    },
+        <section className="container snap-element">
+          <Particles
+            className="particles"
+            params={{
+              particles: {
+                number: {
+                  value: 100,
+                  density: {
+                    enable: false,
                   },
                 },
-
-                retina_detect: true,
-              }}
-            />
-          }
+                size: {
+                  value: 3,
+                  random: true,
+                  anim: {
+                    speed: 4,
+                    size_min: 0.3,
+                  },
+                },
+                line_linked: {
+                  enable: false,
+                },
+                move: {
+                  random: true,
+                  speed: 0.5,
+                  out_mode: "out",
+                },
+              },
+              interactivity: {
+                events: {
+                  onhover: {
+                    enable: true,
+                    mode: "repulse",
+                  },
+                },
+                modes: {
+                  repulse: {
+                    distance: 80,
+                    duration: 3,
+                  },
+                },
+              },
+            }}
+          />
 
           <div className="languages">
             <Flag flag="en" setLanguage={setLanguage} language={language} />
             <Flag flag="fr" setLanguage={setLanguage} language={language} />
           </div>
 
-          <section>
-            {content === "home" ? (
-              <div className="titles">
-                <h1>
-                  <span>C</span>
-                  <span>o</span>
-                  <span>r</span>
-                  <span>i</span>
-                  <span>n</span>
-                  <span>n</span>
-                  <span>e&nbsp;</span>
-                  <span>P</span>
-                  <span>r</span>
-                  <span>a</span>
-                  <span>d</span>
-                  <span>i</span>
-                  <span>e</span>
-                  <span>r</span>
-                </h1>
-                <h2>
-                  {language ? data.english.mainTitle : data.french.mainTitle}
-                </h2>
-              </div>
-            ) : null}
-          </section>
+          {content === "main" ? (
+            <div className="main-content">
+              <h1>
+                <span>C</span>
+                <span>o</span>
+                <span>r</span>
+                <span>i</span>
+                <span>n</span>
+                <span>n</span>
+                <span>e&nbsp;</span>
+                <span>P</span>
+                <span>r</span>
+                <span>a</span>
+                <span>d</span>
+                <span>i</span>
+                <span>e</span>
+                <span>r</span>
+              </h1>
+              <h2>
+                {language ? data.english.mainTitle : data.french.mainTitle}
+              </h2>
+            </div>
+          ) : content === "about" ? (
+            <div className="about-content"></div>
+          ) : null}
 
           <div className="menu">
             {language
               ? data.english.header.map((item, index) => {
-                  return (
-                    <a href="#" key={index}>
-                      {item.text}
-                    </a>
-                  );
+                  return <Link index={index} item={item} />;
                 })
               : data.french.header.map((item, index) => {
-                  return (
-                    <a href="#" key={index}>
-                      {item.text}
-                    </a>
-                  );
+                  return <Link index={index} item={item} />;
                 })}
           </div>
 
@@ -114,19 +114,31 @@ function App() {
 
         <section
           className="project snap-element"
-          style={{ "background-color": "deeppink" }}
+          style={{
+            "background-color": "deeppink",
+            height: "100vh",
+            width: "100vw",
+          }}
         >
           coucou
         </section>
         <section
           className="project snap-element"
-          style={{ "background-color": "pink" }}
+          style={{
+            "background-color": "pink",
+            height: "100vh",
+            width: "100vw",
+          }}
         >
           coucou
         </section>
         <section
           className="project snap-element"
-          style={{ "background-color": "hotpink" }}
+          style={{
+            "background-color": "hotpink",
+            height: "100vh",
+            width: "100vw",
+          }}
         >
           coucou
         </section>

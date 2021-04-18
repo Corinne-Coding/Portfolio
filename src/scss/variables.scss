@@ -1,28 +1,39 @@
 // SCSS Variables
 
 /* FONTS */
-$noto-font: "Noto Sans JP";
+$noto-font: "Noto Sans JP", "Helvetica Neue", sans-serif;
+$baskerville-font: "Libre Baskerville", sans-serif;
 
+%reg-baskerville {
+  font-family: $baskerville-font;
+  font-weight: 400;
+}
 %bold-baskerville {
-  font-family: "Libre Baskerville";
+  font-family: $baskerville-font;
   font-weight: 700;
 }
 
-%reg-baskerville {
-  font-family: "Libre Baskerville";
+%thin-noto {
+  font-family: $noto-font;
+  font-weight: 300;
+}
+%reg-noto {
+  font-family: $noto-font;
   font-weight: 400;
+}
+%bold-noto {
+  font-family: $noto-font;
+  font-weight: 700;
 }
 
 /* COLORS */
-$main-dark-bg-color: #1c131d;
-$main-bg-color: #271b28;
-$gradient-main-color: rgb(52, 36, 54);
+$main-dark-bg-color: rgba(2, 0, 36, 1);
+$main-bg-color: rgb(11, 45, 84);
 $main-color: #ff952b;
 $main-light-color: #ffc386;
 $white-color: #fff;
 
 /* KEYFRAMES */
-/* Apparition from the right */
 @keyframes rightApparition {
   from {
     margin-left: 20%;
@@ -33,18 +44,6 @@ $white-color: #fff;
     opacity: 1;
   }
 }
-/* Apparition from the top */
-@keyframes topApparition {
-  from {
-    margin-top: -20%;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0%;
-    opacity: 1;
-  }
-}
-/* Titles apparition */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -53,21 +52,6 @@ $white-color: #fff;
     opacity: 1;
   }
 }
-
-/* Gradient */
-@keyframes gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-/* Going down */
 @keyframes goDown {
   0% {
     transform: translate(0, 0);
