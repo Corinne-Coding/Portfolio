@@ -1,16 +1,67 @@
 {
   "french": {
-    "header": [{ "text": "à propos de moi" }, { "text": "me contacter" }],
+    "header": [
+      { "text": "à propos de moi", "ref": "about" },
+      { "text": "me contacter", "ref": "contact" },
+      { "text": "accueil", "ref": "home" }
+    ],
     "mainTitle": "Développeuse Front-End | Web & Mobile",
+    "contentTitles": {
+      "about": "Qui suis-je ?",
+      "contact": "Pour me contacter ..."
+    },
     "projects": {
-      "title": "Mes projets"
+      "title": "Mes projets",
+      "list": [
+        {
+          "title": "To-do list",
+          "id": 1,
+          "description": "Projet To do list, what else ?"
+        },
+        {
+          "title": "Airbnb",
+          "id": 2,
+          "description": "Projet Airbnb, what else ?"
+        },
+        {
+          "title": "Memory game",
+          "id": 3,
+          "description": "Projet memory game, what else ?"
+        }
+      ]
     }
   },
+
   "english": {
-    "header": [{ "text": "about me" }, { "text": "contact me" }],
+    "header": [
+      { "text": "about me", "ref": "about" },
+      { "text": "contact me", "ref": "contact" },
+      { "text": "home", "ref": "home" }
+    ],
     "mainTitle": "Front-End developer | Web & Mobile",
+    "contentTitles": {
+      "about": "Who Am I ?",
+      "contact": "To contact me ..."
+    },
     "projects": {
-      "title": "My projects"
+      "title": "My projects",
+      "list": [
+        {
+          "title": "To-do list",
+          "id": 1,
+          "description": "Projet To do list, what else ?"
+        },
+        {
+          "title": "Airbnb",
+          "id": 2,
+          "description": "Projet Airbnb, what else ?"
+        },
+        {
+          "title": "Memory game",
+          "id": 3,
+          "description": "Projet memory game, what else ?"
+        }
+      ]
     }
   }
 }

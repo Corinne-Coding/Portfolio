@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // SCSS
 import "./scss/App.scss";
@@ -7,18 +7,33 @@ import "./scss/App.scss";
 import json from "./data.json";
 
 // Particles
+/* From :  https://www.npmjs.com/package/react-particles-js */
 import Particles from "react-particles-js";
 
 // Components
-import Link from "./components/Link/Link";
-import Flag from "./components/Flag/Flag";
 import AnimatedArrow from "./components/AnimatedArrow/AnimatedArrow";
+import ButtonMenu from "./components/ButtonMenu/ButtonMenu";
+import Content from "./components/Content/Content";
+import Flag from "./components/Flag/Flag";
+import Project from "./components/Project/Project";
 
 function App() {
-  const [data] = useState(json);
-  // Languages : true = english / false = french
-  const [language, setLanguage] = useState(true);
-  const [content, setContent] = useState("main");
+  const [data, setData] = useState(json.english);
+  // Languages : 0 = english (default) / 1 = french
+  const [language, setLanguage] = useState(0);
+  const [content, setContent] = useState("home");
+
+  useEffect(() => {
+    const loadData = () => {
+      if (language === 0) {
+        setData(json.english);
+      } else {
+        setData(json.french);
+      }
+    };
+
+    loadData();
+  }, [language]);
 
   return (
     <>
@@ -68,13 +83,26 @@ function App() {
             }}
           />
 
-          <div className="languages">
+          <div className="flags-container">
             <Flag flag="en" setLanguage={setLanguage} language={language} />
             <Flag flag="fr" setLanguage={setLanguage} language={language} />
           </div>
 
-          {content === "main" ? (
-            <div className="main-content">
+          <div className="menu">
+            {data.header.map((item, index) => {
+              return (
+                <ButtonMenu
+                  key={index}
+                  item={item}
+                  setContent={setContent}
+                  content={content}
+                />
+              );
+            })}
+          </div>
+
+          {content === "home" ? (
+            <Content>
               <h1>
                 <span>C</span>
                 <span>o</span>
@@ -91,64 +119,24 @@ function App() {
                 <span>e</span>
                 <span>r</span>
               </h1>
-              <h2>
-                {language ? data.english.mainTitle : data.french.mainTitle}
-              </h2>
-            </div>
+              <h2>{data.mainTitle}</h2>
+            </Content>
           ) : content === "about" ? (
-            <div className="about-content"></div>
+            <Content>
+              <h3>{data.contentTitles.about}</h3>
+            </Content>
+          ) : content === "contact" ? (
+            <Content>
+              <h3>{data.contentTitles.contact}</h3>
+            </Content>
           ) : null}
 
-          <div className="menu">
-            {language
-              ? data.english.header.map((item, index) => {
-                  return <Link index={index} item={item} />;
-                })
-              : data.french.header.map((item, index) => {
-                  return <Link index={index} item={item} />;
-                })}
-          </div>
-
-          <AnimatedArrow />
+          <AnimatedArrow href={1} data={data} />
         </section>
 
-        <section
-          className="project snap-element"
-          style={{
-            "background-color": "deeppink",
-            height: "100vh",
-            width: "100vw",
-          }}
-        >
-          coucou
-        </section>
-        <section
-          className="project snap-element"
-          style={{
-            "background-color": "pink",
-            height: "100vh",
-            width: "100vw",
-          }}
-        >
-          coucou
-        </section>
-        <section
-          className="project snap-element"
-          style={{
-            "background-color": "hotpink",
-            height: "100vh",
-            width: "100vw",
-          }}
-        >
-          coucou
-        </section>
-
-        <section
-          className="project snap-element"
-          style={{ "background-color": "orange" }}
-        >
-          coucou
-        </section>
+        {data.projects.list.map((item) => {
+          return <Project key={item.id} item={item} data={data} />;
+        })}
       </div>
     </>
   );

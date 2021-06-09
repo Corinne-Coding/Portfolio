@@ -1,9 +1,26 @@
-// SCSS Variables
+// -------------- //
+// SCSS Variables //
+// -------------- //
 
 /* FONTS */
-$noto-font: "Noto Sans JP", "Helvetica Neue", sans-serif;
-$baskerville-font: "Libre Baskerville", sans-serif;
 
+// Noto font
+$noto-font: "Noto Sans JP", "Helvetica Neue", sans-serif;
+%thin-noto {
+  font-family: $noto-font;
+  font-weight: 300;
+}
+%regular-noto {
+  font-family: $noto-font;
+  font-weight: 400;
+}
+%bold-noto {
+  font-family: $noto-font;
+  font-weight: 700;
+}
+
+// Baskerville font
+$baskerville-font: "Libre Baskerville", sans-serif;
 %reg-baskerville {
   font-family: $baskerville-font;
   font-weight: 400;
@@ -13,25 +30,17 @@ $baskerville-font: "Libre Baskerville", sans-serif;
   font-weight: 700;
 }
 
-%thin-noto {
-  font-family: $noto-font;
-  font-weight: 300;
-}
-%reg-noto {
-  font-family: $noto-font;
-  font-weight: 400;
-}
-%bold-noto {
-  font-family: $noto-font;
-  font-weight: 700;
-}
+/* ------------------------------------------ */
 
 /* COLORS */
 $main-dark-bg-color: rgba(2, 0, 36, 1);
-$main-bg-color: rgb(11, 45, 84);
+$main-bg-color: rgb(8, 31, 58);
 $main-color: #ff952b;
 $main-light-color: #ffc386;
+// $main-xtra-light-color: #fceedf;
 $white-color: #fff;
+
+/* ------------------------------------------ */
 
 /* KEYFRAMES */
 @keyframes rightApparition {

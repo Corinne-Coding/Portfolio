@@ -13,10 +13,10 @@ const Flag = ({ language, setLanguage, flag }) => {
         src={flag === "fr" ? frenchFlag : englishFlag}
         alt="flag"
         onClick={() => {
-          if (language && flag === "fr") {
-            setLanguage(false);
-          } else if (!language && flag === "en") {
-            setLanguage(true);
+          if (language === 0 && flag === "fr") {
+            setLanguage(1);
+          } else if (language === 1 && flag === "en") {
+            setLanguage(0);
           }
         }}
       />

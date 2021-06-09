@@ -1,6 +1,6 @@
 @import "../../scss/variables.scss";
 
-.down {
+.animated-arrow {
   position: absolute;
   bottom: 4rem;
   left: 50%;
@@ -9,15 +9,15 @@
   flex-direction: column;
   justify-content: center;
   animation: fadeIn 20s;
-  cursor: default;
+  cursor: pointer;
 }
 
-.down img {
+.animated-arrow img {
   height: 3rem;
   animation: goDown 2s infinite;
 }
 
-.down p {
+.animated-arrow p {
   color: $white-color;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;

@@ -1,3 +1,7 @@
+// -------------- //
+// Global Rules //
+// -------------- //
+
 @import "variables.scss";
 
 html {
@@ -9,7 +13,7 @@ html {
 }
 
 body {
-  @extend %reg-noto;
+  @extend %regular-noto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,6 +29,7 @@ h1 {
   margin-bottom: 2rem;
   width: 100%;
   text-align: center;
+  color: $white-color;
 }
 
 h1 {
@@ -41,32 +46,10 @@ h2 {
   animation: fadeIn 16s;
   width: 100%;
   text-align: center;
+  color: $main-light-color;
 }
 
-// @media screen and (min-width: 1280px) {
-//   h1 {
-//     font-size: 10rem;
-//   }
-
-//   h3 {
-//     font-size: 4rem;
-//   }
-
-//   h2 {
-//     font-size: 3.5rem;
-//   }
-// }
-
-// @media screen and (max-width: 480px) {
-//   h1 {
-//     animation: topApparition 4s;
-//     font-size: 3rem;
-//   }
-//   h3 {
-//     font-size: 1.6rem;
-//   }
-
-//   h2 {
-//     font-size: 1.4rem;
-//   }
-// }
+h3 {
+  font-size: 3vw;
+  color: $main-light-color;
+}

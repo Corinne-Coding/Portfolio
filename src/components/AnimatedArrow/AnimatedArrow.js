@@ -4,12 +4,12 @@ import "./AnimatedArrow.scss";
 // Icon
 import DownArrow from "../../img/down-arrow.svg";
 
-const AnimatedArrow = () => {
+const AnimatedArrow = ({ data }) => {
   return (
-    <div className="down">
-      <p>My projects</p>
+    <a className="animated-arrow" href="#1">
+      <p>{data.projects.title}</p>
       <img src={DownArrow} alt="down arrow" />
-    </div>
+    </a>
   );
 };
 

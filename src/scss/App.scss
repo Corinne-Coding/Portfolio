@@ -1,7 +1,12 @@
+// -------------- //
+// App.js SCSS //
+// -------------- //
+
 @import "../scss/variables.scss";
 
 .scroll-snap-container {
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   overflow-y: scroll;
   max-height: 100vh;
   max-width: 100vw;
@@ -18,10 +23,6 @@
   }
 }
 
-.particles {
-  height: 100vh !important;
-}
-
 .container {
   height: 100vh;
   position: relative;
@@ -32,26 +33,19 @@
     $main-dark-bg-color 100%
   );
 
+  /* Particles */
+  .particles {
+    height: 100vh !important;
+  }
+
   /* Flags */
-  .languages {
+  .flags-container {
     position: absolute;
     top: 2vh;
     left: 2vw;
     img:first-child {
       margin-right: 1vw;
     }
-  }
-
-  /* Main content */
-  .main-content {
-    color: $white-color;
-    position: absolute;
-    top: 30vh;
-    padding: 0 4rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   /* Menu */
