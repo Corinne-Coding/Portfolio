@@ -5,7 +5,14 @@
 @import "../../scss/variables.scss";
 
 .project {
-  background-color: green;
   height: 100vh;
   width: 100vw;
+}
+
+$colors: project-1 #faeee0, project-2 blue, project-3 orange, project-4 green;
+
+@each $color in $colors {
+  .#{nth($color, 1)} {
+    background-color: nth($color, 2);
+  }
 }

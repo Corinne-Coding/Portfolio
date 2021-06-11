@@ -19,7 +19,7 @@
 }
 
 .selected {
-  color: $main-light-color;
+  color: $star-light-color;
   cursor: default;
 }
 
@@ -29,11 +29,11 @@
   position: absolute;
   background: linear-gradient(
     to right,
-    $main-dark-bg-color,
-    $main-light-color,
-    $main-color,
-    $main-light-color,
-    $main-dark-bg-color
+    $sky-dark-color,
+    $star-light-color,
+    $star-color,
+    $star-light-color,
+    $sky-dark-color
   );
   transition: all 0.6s ease-in-out;
   width: 100%;

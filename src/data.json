@@ -23,18 +23,18 @@
       "title": "Mes projets",
       "list": [
         {
+          "ref": "project-1",
           "title": "To-do list",
-          "id": 1,
           "description": "Projet To do list, what else ?"
         },
         {
+          "ref": "project-2",
           "title": "Airbnb",
-          "id": 2,
           "description": "Projet Airbnb, what else ?"
         },
         {
+          "ref": "project-3",
           "title": "Memory game",
-          "id": 3,
           "description": "Projet memory game, what else ?"
         }
       ]
@@ -65,18 +65,18 @@
       "title": "My projects",
       "list": [
         {
+          "ref": "project-1",
           "title": "To-do list",
-          "id": 1,
           "description": "Projet To do list, what else ?"
         },
         {
+          "ref": "project-2",
           "title": "Airbnb",
-          "id": 2,
           "description": "Projet Airbnb, what else ?"
         },
         {
+          "ref": "project-3",
           "title": "Memory game",
-          "id": 3,
           "description": "Projet memory game, what else ?"
         }
       ]

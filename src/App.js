@@ -30,6 +30,7 @@ function App() {
   const [data, setData] = useState(json.english);
   const [content, setContent] = useState("home");
   const [copy, setCopy] = useState(false);
+  const [projectNumber, setProjectNumber] = useState(0);
 
   useEffect(() => {
     // Function to load content in right language
@@ -60,7 +61,7 @@ function App() {
       <div className="scroll-snap-container">
         <div className="test">
           <div className={content === "about" ? "picture" : "no-picture"}>
-            <section className="container snap-element">
+            <section className="container snap-element ">
               <div className="lang-music-container">
                 <Flag flag="en" setLanguage={setLanguage} language={language} />
                 <Flag flag="fr" setLanguage={setLanguage} language={language} />
@@ -180,7 +181,11 @@ function App() {
                 </div>
               ) : null}
 
-              <AnimatedArrow href={1} data={data} />
+              <AnimatedArrow
+                title={data.projects.title}
+                index={0}
+                setProjectNumber={setProjectNumber}
+              />
 
               <Particles
                 className="particles"
@@ -229,8 +234,16 @@ function App() {
           </div>
         </div>
 
-        {data.projects.list.map((item) => {
-          return <Project key={item.id} item={item} data={data} />;
+        {data.projects.list.map((item, index) => {
+          return (
+            <Project
+              key={item.id}
+              item={item}
+              index={index}
+              title="Next project"
+              setProjectNumber={setProjectNumber}
+            />
+          );
         })}
       </div>
     </>

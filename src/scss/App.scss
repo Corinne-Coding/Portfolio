@@ -21,6 +21,7 @@
   }
   .snap-element {
     scroll-snap-align: start;
+    position: relative;
   }
 
   /* Particles */
@@ -44,12 +45,8 @@
 .container {
   height: 100vh;
   position: relative;
-  background: $main-bg-color;
-  background: radial-gradient(
-    circle,
-    $main-bg-color 0%,
-    $main-dark-bg-color 100%
-  );
+  background: $sky-color;
+  background: radial-gradient(circle, $sky-color 0%, $sky-dark-color 100%);
 
   /* Languages */
   .lang-music-container {
@@ -105,7 +102,7 @@
           font-size: 1.4rem;
         }
         span {
-          color: $main-color;
+          color: $star-color;
         }
         a {
           text-decoration: underline;
@@ -155,7 +152,7 @@
         }
         div {
           width: 10rem;
-          color: $main-xtra-light-color;
+          color: $star-xtra-light-color;
         }
       }
       .logos-container {
