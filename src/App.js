@@ -13,14 +13,13 @@ import Particles from "react-particles-js";
 
 // Components
 import AnimatedArrow from "./components/AnimatedArrow/AnimatedArrow";
+import Audio from "./components/Audio/Audio";
 import ButtonMenu from "./components/ButtonMenu/ButtonMenu";
 import Flag from "./components/Flag/Flag";
 import Project from "./components/Project/Project";
+import Logo from "./components/Logo/Logo";
 
-// Pictures
-import linkedin from "./img/linkedin.svg";
-import github from "./img/github.svg";
-import email from "./img/email.svg";
+// Icons
 import copyImage from "./img/copy.svg";
 
 function App() {
@@ -31,6 +30,7 @@ function App() {
   const [copy, setCopy] = useState(false);
 
   useEffect(() => {
+    // Function to load content in right language
     const loadData = () => {
       if (language === 0) {
         setData(json.english);
@@ -43,6 +43,7 @@ function App() {
   }, [language]);
 
   useEffect(() => {
+    // Function to undisplay "copied"
     const undisplayText = () => {
       setCopy(false);
     };
@@ -58,9 +59,10 @@ function App() {
         <div className="test">
           <div className={content === "about" ? "picture" : "no-picture"}>
             <section className="container snap-element">
-              <div className="flags-container">
+              <div className="lang-music-container">
                 <Flag flag="en" setLanguage={setLanguage} language={language} />
                 <Flag flag="fr" setLanguage={setLanguage} language={language} />
+                <Audio data={data} />
               </div>
 
               <div className="menu">
@@ -76,6 +78,7 @@ function App() {
                 })}
               </div>
 
+              {/* Home content */}
               {content === "home" ? (
                 <div className="absolute-content w100">
                   <h1>
@@ -97,6 +100,7 @@ function App() {
                   <h2>{data.mainTitle}</h2>
                 </div>
               ) : content === "about" ? (
+                /* About content */
                 <div className="absolute-content right">
                   <h3>{data.contentTitles.about}</h3>
                   <p className="description">
@@ -110,6 +114,7 @@ function App() {
                   </p>
                 </div>
               ) : content === "contact" ? (
+                /* Contact content */
                 <div className="absolute-content w100">
                   <div className="texts">
                     <h3>Corinne Pradier</h3>
@@ -128,18 +133,19 @@ function App() {
                       <div>{<span>{copy ? "Copied !" : ""}</span>}</div>
                     </div>
 
-                    <div className="logos">
-                      <a href="https://www.linkedin.com/in/corinne-pradier-6610201b2/">
-                        <img src={linkedin} alt="linkedin logo" />
-                      </a>
-
-                      <a href="https://github.com/Corinne-Coding">
-                        <img src={github} alt="github logo" />
-                      </a>
-
-                      <a href="mailto:pradier.corinne@gmail.com">
-                        <img src={email} alt="email logo" />
-                      </a>
+                    <div className="logos-container">
+                      <Logo
+                        name="linkedin"
+                        link="https://www.linkedin.com/in/corinne-pradier-6610201b2/"
+                      />
+                      <Logo
+                        name="github"
+                        link="https://github.com/Corinne-Coding"
+                      />
+                      <Logo
+                        name="email"
+                        link="mailto:pradier.corinne@gmail.com"
+                      />
                     </div>
                   </div>
                 </div>
@@ -215,5 +221,7 @@ export default App;
 
           https://www.flaticon.com/authors/pixel-buddha
           https://www.flaticon.com/authors/becris
+
+          https://www.youtube.com/watch?v=8N_SYOXhmW4&list=RDiR5uBjqEKvU&index=8
 
           */

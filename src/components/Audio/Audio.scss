@@ -1,0 +1,23 @@
+// -------------- //
+// Audio.js SCSS //
+// -------------- //
+
+@import "../../scss/variables.scss";
+
+.audio img {
+  height: 2.2rem;
+  cursor: pointer;
+}
+[data-title] {
+  position: relative;
+}
+[data-title]:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -2rem;
+  padding: 3px 6px;
+  border-radius: 2px;
+  background: $main-xtra-light-color;
+  color: black;
+  white-space: nowrap;
+}

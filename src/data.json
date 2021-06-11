@@ -2,10 +2,14 @@
   "french": {
     "header": [
       { "text": "à propos de moi", "ref": "about" },
-      { "text": "me contacter", "ref": "contact" },
+      { "text": "contact & CV", "ref": "contact" },
       { "text": "accueil", "ref": "home" }
     ],
     "mainTitle": "Développeuse Front-End | Web & Mobile",
+    "music": {
+      "soundOn": "Arrêter la musique ✖️",
+      "soundOff": "Pour se relaxer 🎶"
+    },
     "contentTitles": {
       "about": "Qui suis-je ?",
       "contact": "Pour me contacter ...",
@@ -36,10 +40,14 @@
   "english": {
     "header": [
       { "text": "about me", "ref": "about" },
-      { "text": "contact me", "ref": "contact" },
+      { "text": "contact & CV", "ref": "contact" },
       { "text": "home", "ref": "home" }
     ],
     "mainTitle": "Front-End developer | Web & Mobile",
+    "music": {
+      "soundOn": "Stop music ✖️",
+      "soundOff": "Relaxing with music 🎶"
+    },
     "contentTitles": {
       "about": "Who Am I ?",
       "contact": "To contact me ...",
