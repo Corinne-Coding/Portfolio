@@ -19,8 +19,10 @@ import Flag from "./components/Flag/Flag";
 import Project from "./components/Project/Project";
 import Logo from "./components/Logo/Logo";
 
-// Icons
+// Icons & pictures
 import copyImage from "./img/copy.svg";
+import cvENG from "./img/CV.png";
+import download from "./img/download.svg";
 
 function App() {
   const [language, setLanguage] = useState(0);
@@ -103,19 +105,35 @@ function App() {
                 /* About content */
                 <div className="absolute-content right">
                   <h3>{data.contentTitles.about}</h3>
-                  <p className="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                    vitae eaque a placeat omnis nemo facilis tenetur officiis.
-                    Nulla sapiente debitis vitae hic quia consequatur quos omnis
-                    sed possimus quo. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Ad vitae eaque a placeat omnis nemo
-                    facilis tenetur officiis. Nulla sapiente debitis vitae hic
-                    quia consequatur quos omnis sed possimus quo.
-                  </p>
+                  <div className="description">
+                    {data.description.map((text) => {
+                      return (
+                        <p>
+                          {text}
+                          <br />
+                          <br />
+                        </p>
+                      );
+                    })}
+                    <div>
+                      {language === 0 ? (
+                        <p>
+                          Want to know more about <span>Le Reacteur</span> ?
+                        </p>
+                      ) : (
+                        <p>
+                          Pour en savoir plus sur <span>Le Reacteur</span> :
+                        </p>
+                      )}
+                      <a href="https://www.lereacteur.io/" target="_blank">
+                        https://www.lereacteur.io/
+                      </a>
+                    </div>
+                  </div>
                 </div>
               ) : content === "contact" ? (
                 /* Contact content */
-                <div className="absolute-content w100">
+                <div className="absolute-content w100 up">
                   <div className="texts">
                     <h3>Corinne Pradier</h3>
                     <p>{data.mainTitle}</p>
@@ -147,6 +165,17 @@ function App() {
                         link="mailto:pradier.corinne@gmail.com"
                       />
                     </div>
+
+                    <a href={cvENG} download>
+                      <span>
+                        {language === 0
+                          ? `Download my CV :`
+                          : "Téléchargez mon CV :"}
+                      </span>
+                      <div>
+                        <img src={download} alt="download icon" />
+                      </div>
+                    </a>
                   </div>
                 </div>
               ) : null}

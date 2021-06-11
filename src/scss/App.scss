@@ -84,13 +84,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // background-color: red;
 
     .description {
       text-align: justify;
       animation: fadeIn 8s;
       padding-right: 6rem;
       margin-top: 3rem;
+
+      p {
+        font-size: 1.6rem;
+      }
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.4rem;
+        margin-top: 3rem;
+        p {
+          font-size: 1.4rem;
+        }
+        span {
+          color: $main-color;
+        }
+        a {
+          text-decoration: underline;
+        }
+        a:hover {
+          color: #5c48d2;
+        }
+      }
     }
 
     .texts {
@@ -141,7 +164,30 @@
           margin-right: 2rem;
         }
       }
+      & > a {
+        animation: fadeIn 12s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+
+        div {
+          padding: 6px;
+          border-radius: 50%;
+          margin-left: 1rem;
+        }
+        img {
+          height: 2rem;
+        }
+        span {
+          font-size: 1.6rem;
+        }
+      }
     }
+  }
+
+  .up {
+    top: 20rem;
   }
 
   .w100 {

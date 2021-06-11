@@ -12,9 +12,13 @@
     },
     "contentTitles": {
       "about": "Qui suis-je ?",
-      "contact": "Pour me contacter ...",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad"
+      "contact": "Pour me contacter ..."
     },
+    "description": [
+      "Après avoir travaillé 8 ans dans l'Éducation nationale en tant que professeur des écoles, j'ai décidé de changer d'univers et de me diriger vers le développement Web & Mobile.",
+      "J'ai suivi le bootcamp du Reacteur durant l'été 2019, et j'y ai été ensuite recrutée comme professeur assistante. J'y suis désormais formatrice JavaScript / React / React Native.",
+      "Depuis ma formation au Reacteur, je continue de me former en autodidacte afin d'améliorer mes compétences."
+    ],
     "projects": {
       "title": "Mes projets",
       "list": [
@@ -50,9 +54,13 @@
     },
     "contentTitles": {
       "about": "Who Am I ?",
-      "contact": "To contact me ...",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad"
+      "contact": "To contact me ..."
     },
+    "description": [
+      "After working for 8 years in Éducation nationale as a school teacher, I decided to change universe and move towards Web & Mobile development.",
+      "I followed the Reacteur bootcamp during the summer of 2019, and I was then recruited there as a teacher assistant. I am now a JavaScript / React / React Native trainer.",
+      "Since my training at Le Reacteur, I continue to train myself to improve my skills."
+    ],
     "projects": {
       "title": "My projects",
       "list": [
