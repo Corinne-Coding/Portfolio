@@ -6,12 +6,12 @@
 
 .button-menu,
 .selected {
-  font-size: 1.2vw;
+  font-size: 2rem;
   font-weight: 300;
   animation: fadeIn 10s;
+  padding: 1rem 0;
   cursor: pointer;
   position: relative;
-  padding: 1rem 0;
   overflow: hidden;
 }
 .button-menu:not(:last-child) {
@@ -52,4 +52,45 @@
 }
 .not-selected:hover::after {
   right: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  .button-menu,
+  .selected {
+    font-size: 1.6rem;
+  }
+  .button-menu:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button-menu,
+  .selected {
+    font-size: 1.4rem;
+  }
+  .button-menu:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .button-menu,
+  .selected {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 414px) {
+}
+
+@media screen and (max-width: 360px) {
+  .button-menu:not(:last-child) {
+    margin-right: 1.6rem;
+  }
 }

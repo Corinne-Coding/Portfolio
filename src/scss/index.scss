@@ -30,7 +30,7 @@ p {
 h1 {
   @extend %bold-baskerville;
   font-size: 8rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: $white-color;
 }
 
@@ -54,4 +54,83 @@ h3 {
   font-size: 4rem;
   color: $star-xtra-light-color;
   animation: fadeIn 8s;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+// A SUPPRIMER
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 414px) {
+}
+
+@media screen and (max-width: 360px) {
 }

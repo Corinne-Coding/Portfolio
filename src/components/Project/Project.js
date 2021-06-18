@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 // SCSS
 import "./Project.scss";
 

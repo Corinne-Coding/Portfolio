@@ -21,3 +21,11 @@
   color: black;
   white-space: nowrap;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  .audio {
+    display: none;
+  }
+}

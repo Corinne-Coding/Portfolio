@@ -16,7 +16,7 @@ const ButtonMenu = ({ content, item, setContent }) => {
         setContent(item.ref);
       }}
     >
-      {item.text}
+      <p>{item.text}</p>
     </div>
   );
 };

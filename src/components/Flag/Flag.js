@@ -7,20 +7,18 @@ import englishFlag from "../../img/united-kingdom.svg";
 
 const Flag = ({ language, setLanguage, flag }) => {
   return (
-    <>
-      <img
-        className="flag"
-        src={flag === "fr" ? frenchFlag : englishFlag}
-        alt="flag"
-        onClick={() => {
-          if (language === 0 && flag === "fr") {
-            setLanguage(1);
-          } else if (language === 1 && flag === "en") {
-            setLanguage(0);
-          }
-        }}
-      />
-    </>
+    <img
+      className="flag"
+      src={flag === "fr" ? frenchFlag : englishFlag}
+      alt="flag"
+      onClick={() => {
+        if (language === 0 && flag === "fr") {
+          setLanguage(1);
+        } else if (language === 1 && flag === "en") {
+          setLanguage(0);
+        }
+      }}
+    />
   );
 };
 

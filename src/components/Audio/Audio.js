@@ -22,7 +22,11 @@ const Audio = ({ data }) => {
   return (
     <div className="audio">
       <span data-title={sound ? data.music.soundOn : data.music.soundOff}>
-        <img onClick={handleSound} src={sound ? soundOff : soundOn}></img>
+        <img
+          alt="sound icon"
+          onClick={handleSound}
+          src={sound ? soundOff : soundOn}
+        ></img>
       </span>
       <audio loop id="audio">
         <source src={stressabbau} type="audio/mp3" />

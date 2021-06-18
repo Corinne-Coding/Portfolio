@@ -30,7 +30,7 @@ function App() {
   const [data, setData] = useState(json.english);
   const [content, setContent] = useState("home");
   const [copy, setCopy] = useState(false);
-  const [projectNumber, setProjectNumber] = useState(0);
+  const [, setProjectNumber] = useState(0);
 
   useEffect(() => {
     // Function to load content in right language
@@ -63,8 +63,20 @@ function App() {
           <div className={content === "about" ? "picture" : "no-picture"}>
             <section className="container snap-element ">
               <div className="lang-music-container">
-                <Flag flag="en" setLanguage={setLanguage} language={language} />
-                <Flag flag="fr" setLanguage={setLanguage} language={language} />
+                {language === 0 ? (
+                  <Flag
+                    flag="fr"
+                    setLanguage={setLanguage}
+                    language={language}
+                  />
+                ) : (
+                  <Flag
+                    flag="en"
+                    setLanguage={setLanguage}
+                    language={language}
+                  />
+                )}
+
                 <Audio data={data} />
               </div>
 
@@ -126,7 +138,11 @@ function App() {
                           Pour en savoir plus sur <span>Le Reacteur</span> :
                         </p>
                       )}
-                      <a href="https://www.lereacteur.io/" target="_blank">
+                      <a
+                        href="https://www.lereacteur.io/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         https://www.lereacteur.io/
                       </a>
                     </div>

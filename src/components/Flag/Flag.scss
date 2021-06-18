@@ -11,14 +11,16 @@
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px) {
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
   .flag {
-    width: 2rem;
+    width: 2.2rem;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .flag {
-    width: 1.5rem;
+    width: 2rem;
   }
 }
