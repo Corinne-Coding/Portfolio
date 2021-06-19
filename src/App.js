@@ -111,7 +111,7 @@ function App() {
               </div>
             ) : content === "about" ? (
               /* About content */
-              <div className="absolute-content right">
+              <div className="absolute-content right ">
                 <h3>{data.contentTitles.about}</h3>
                 <div className="description">
                   {data.description.map((text) => {

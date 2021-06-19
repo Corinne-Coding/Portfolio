@@ -15,7 +15,6 @@
   /* Hide scrollbar */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  /* Hide scrollbar */
   &::-webkit-scrollbar {
     display: none;
   }
@@ -53,7 +52,7 @@
     align-items: center;
     position: absolute;
     z-index: 2;
-    top: 3rem;
+    top: 2rem;
     left: 2rem;
     img {
       margin-right: 1rem;
@@ -64,7 +63,7 @@
   .menu {
     position: absolute;
     z-index: 2;
-    top: 2rem;
+    top: 1rem;
     right: 2rem;
     display: flex;
     color: $white-color;
@@ -202,21 +201,117 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
+  .container {
+    .right {
+      top: 20vh;
+    }
+    .absolute-content {
+      .description,
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .container {
+    .right {
+      padding-left: 6rem;
+    }
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .scroll-snap-container {
     .picture {
       background-image: inherit;
     }
   }
+  .container {
+    .right {
+      width: 100%;
+    }
+  }
+  .container {
+    .absolute-content {
+      .description {
+        p {
+          font-size: 1.4rem;
+        }
+      }
+      .description {
+        & > div {
+          font-size: 1.2rem;
+          margin-top: 2rem;
+          p {
+            font-size: 1.2rem;
+          }
+          a:hover {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .absolute-content {
+      .description {
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      .description {
+        & > div {
+          font-size: 1rem;
+          margin-top: 1rem;
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .container {
+    .right {
+      padding-left: 3rem;
+      top: 15vh;
+    }
+    .absolute-content {
+      .description {
+        padding-right: 3rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .container {
+    .right {
+      padding-left: 2rem;
+    }
+    .absolute-content {
+      .description {
+        padding-right: 2rem;
+        p {
+          font-size: 1rem;
+          line-height: 1.8rem;
+        }
+      }
+      .description {
+        & > div {
+          font-size: 0.8rem;
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 414px) {
