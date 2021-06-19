@@ -5,7 +5,7 @@
 @import "../scss/variables.scss";
 
 .scroll-snap-container {
-  background-color: #0b193f;
+  background-color: $sky-color;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -31,22 +31,21 @@
 
   /* Picture - About content */
   .picture {
-    background-color: #0b193f;
-    background-image: url(../img/me-compressed.jpg);
+    background-image: url(../img/me.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-  }
-
-  .no-picture {
-    background-color: #0b193f;
+    background-color: $sky-color;
   }
 }
 
 .container {
   height: 100vh;
   position: relative;
-  background: $sky-color;
-  background: radial-gradient(circle, $sky-color 0%, $sky-dark-color 100%);
+  background: radial-gradient(
+    circle,
+    $sky-color-opacity 0%,
+    $sky-dark-color-opacity 100%
+  );
 
   /* Languages */
   .lang-music-container {
