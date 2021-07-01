@@ -14,6 +14,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .button-menu:not(:last-child) {
   margin-right: 4rem;
 }
@@ -76,6 +77,10 @@
   }
   .button-menu:not(:last-child) {
     margin-right: 2rem;
+  }
+  .not-selected::before,
+  .not-selected::after {
+    content: none;
   }
 }
 

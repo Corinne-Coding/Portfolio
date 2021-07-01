@@ -71,3 +71,9 @@
 
 @media screen and (max-width: 360px) {
 }
+
+@media screen and (max-height: 500px) {
+  .animated-arrow {
+    display: none;
+  }
+}
