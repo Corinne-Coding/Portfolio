@@ -22,19 +22,32 @@
 }
 
 .animated-arrow p {
-  color: $white-color;
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+  color: $grey-color;
+  font-size: 1.4rem;
 }
+
+/* ------------------------------------------ */
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
+  .animated-arrow img {
+    height: 2.8rem;
+  }
+  .animated-arrow p {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .animated-arrow {
-    display: none;
+    bottom: 3rem;
+  }
+  .animated-arrow img {
+    height: 2.6rem;
+  }
+  .animated-arrow p {
+    font-size: 1.2rem;
   }
 }
 
@@ -42,6 +55,15 @@
 }
 
 @media screen and (max-width: 480px) {
+  .animated-arrow {
+    bottom: 2rem;
+  }
+  .animated-arrow img {
+    height: 2.2rem;
+  }
+  .animated-arrow p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 414px) {

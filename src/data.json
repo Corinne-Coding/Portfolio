@@ -1,9 +1,9 @@
 {
   "french": {
     "header": [
+      { "text": "accueil", "ref": "home" },
       { "text": "à propos de moi", "ref": "about" },
-      { "text": "contact & CV", "ref": "contact" },
-      { "text": "accueil", "ref": "home" }
+      { "text": "contact & CV", "ref": "contact" }
     ],
     "mainTitle": "Développeuse Front-End | Web & Mobile",
     "music": {
@@ -43,9 +43,9 @@
 
   "english": {
     "header": [
+      { "text": "home", "ref": "home" },
       { "text": "about me", "ref": "about" },
-      { "text": "contact & CV", "ref": "contact" },
-      { "text": "home", "ref": "home" }
+      { "text": "contact & CV", "ref": "contact" }
     ],
     "mainTitle": "Front-End developer | Web & Mobile",
     "music": {

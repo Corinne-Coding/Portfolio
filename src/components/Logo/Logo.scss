@@ -7,3 +7,42 @@
     height: 2.6rem;
   }
 }
+
+/* ------------------------------------------ */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    img {
+      height: 2.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    padding: 0.5rem;
+
+    img {
+      height: 2.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    img {
+      height: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+}
+
+@media screen and (max-width: 360px) {
+}

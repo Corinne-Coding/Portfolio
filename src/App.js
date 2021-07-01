@@ -22,6 +22,7 @@ import Logo from "./components/Logo/Logo";
 // Icons & pictures
 import copyImage from "./img/copy.svg";
 import cvENG from "./img/CV.png";
+import cvFR from "./img/CV.png";
 import download from "./img/download.svg";
 
 // Pictures
@@ -63,18 +64,20 @@ function App() {
     <>
       <img src={profilePicture} alt="profile" style={{ display: "none" }} />
       <div className="scroll-snap-container">
+        {/* PRESENTING */}
         <div className={content === "about" ? "picture" : "no-picture"}>
           <section className="container snap-element ">
+            {/* Languages & Music icons */}
             <div className="lang-music-container">
               {language === 0 ? (
                 <Flag flag="fr" setLanguage={setLanguage} language={language} />
               ) : (
                 <Flag flag="en" setLanguage={setLanguage} language={language} />
               )}
-
               <Audio data={data} />
             </div>
 
+            {/* Menu list */}
             <div className="menu">
               {data.header.map((item, index) => {
                 return (
@@ -88,7 +91,7 @@ function App() {
               })}
             </div>
 
-            {/* Home content */}
+            {/* ----- Home content ----- */}
             {content === "home" ? (
               <div className="absolute-content w100">
                 <h1>
@@ -110,8 +113,8 @@ function App() {
                 <h2>{data.mainTitle}</h2>
               </div>
             ) : content === "about" ? (
-              /* About content */
-              <div className="absolute-content right ">
+              /* ----- About content ----- */
+              <div className="absolute-content right">
                 <h3>{data.contentTitles.about}</h3>
                 <div className="description">
                   {data.description.map((text) => {
@@ -144,12 +147,13 @@ function App() {
                 </div>
               </div>
             ) : content === "contact" ? (
-              /* Contact content */
-              <div className="absolute-content w100 up">
+              /* ----- Contact content ----- */
+              <div className="absolute-content w100">
                 <div className="texts">
                   <h3>Corinne Pradier</h3>
                   <p>{data.mainTitle}</p>
 
+                  {/* mail */}
                   <div className="mail">
                     <p>pradier.corinne@gmail.com</p>
                     <CopyToClipboard
@@ -163,6 +167,7 @@ function App() {
                     <div>{<span>{copy ? "Copied !" : ""}</span>}</div>
                   </div>
 
+                  {/* icons  */}
                   <div className="logos-container">
                     <Logo
                       name="linkedin"
@@ -178,32 +183,34 @@ function App() {
                     />
                   </div>
 
-                  <a href={cvENG} download>
+                  {/* CV */}
+                  <a href={language === 0 ? cvENG : cvFR} download>
                     <span>
                       {language === 0
                         ? `Download my CV :`
                         : "Téléchargez mon CV :"}
                     </span>
-                    <div>
-                      <img src={download} alt="download icon" />
-                    </div>
+
+                    <img src={download} alt="download icon" />
                   </a>
                 </div>
               </div>
             ) : null}
 
+            {/* Arrow at the bottom */}
             <AnimatedArrow
               title={data.projects.title}
               index={0}
               setProjectNumber={setProjectNumber}
             />
 
+            {/* Particles */}
             <Particles
               className="particles"
               params={{
                 particles: {
                   number: {
-                    value: 100,
+                    value: 40,
                     density: {
                       enable: false,
                     },
@@ -221,7 +228,7 @@ function App() {
                   },
                   move: {
                     random: true,
-                    speed: 0.5,
+                    speed: 0.3,
                     out_mode: "out",
                   },
                 },
@@ -244,6 +251,7 @@ function App() {
           </section>
         </div>
 
+        {/* PROJECTS */}
         {data.projects.list.map((item, index) => {
           return (
             <Project

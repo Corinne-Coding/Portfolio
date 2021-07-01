@@ -12,9 +12,8 @@
   max-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
-  /* Hide scrollbar */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -28,7 +27,7 @@
     height: 100vh !important;
   }
 
-  /* Picture - About content */
+  /* Picture (in "about content") */
   .picture {
     background-image: url(../img/me.jpg);
     background-repeat: no-repeat;
@@ -46,7 +45,7 @@
     $sky-dark-color-opacity 100%
   );
 
-  /* Languages */
+  /* Languages & Music icons */
   .lang-music-container {
     display: flex;
     align-items: center;
@@ -59,7 +58,7 @@
     }
   }
 
-  /* Menu */
+  /* Menu list */
   .menu {
     position: absolute;
     z-index: 2;
@@ -69,16 +68,18 @@
     color: $white-color;
   }
 
-  /* Home content */
+  /* All contents */
   .absolute-content {
     color: $white-color;
     position: absolute;
-    top: 30vh;
+    top: 50vh;
+    transform: translate(0, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    /* About content */
     .description {
       text-align: justify;
       animation: fadeIn 8s;
@@ -110,6 +111,7 @@
       }
     }
 
+    /* Contact content */
     .texts {
       display: flex;
       flex-direction: column;
@@ -131,10 +133,13 @@
         display: flex;
         margin-top: 3rem;
       }
+
+      /* mail */
       .mail {
         display: flex;
         align-items: center;
-        margin-left: 10rem;
+        position: relative;
+
         p {
           animation: fadeIn 10s;
           color: $fire-color;
@@ -145,19 +150,24 @@
           animation: fadeIn 10s;
           height: 1.4rem;
           cursor: pointer;
-          margin-right: 1rem;
         }
         div {
-          width: 10rem;
+          position: absolute;
+          right: -0.5rem;
+          transform: translate(100%, 0);
           color: $star-xtra-light-color;
         }
       }
+
+      /* icons */
       .logos-container {
         animation: fadeIn 10s;
         a:not(:last-child) {
           margin-right: 2rem;
         }
       }
+
+      /* CV */
       & > a {
         animation: fadeIn 12s;
         display: flex;
@@ -165,23 +175,15 @@
         align-items: center;
         margin-top: 5rem;
 
-        div {
-          padding: 6px;
-          border-radius: 50%;
-          margin-left: 1rem;
-        }
         img {
           height: 2rem;
+          margin-left: 1rem;
         }
         span {
           font-size: 1.6rem;
         }
       }
     }
-  }
-
-  .up {
-    top: 20rem;
   }
 
   .w100 {
@@ -199,14 +201,14 @@
   }
 }
 
+/* ------------------------------------------ */
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1200px) {
   .container {
-    .right {
-      top: 20vh;
-    }
     .absolute-content {
+      /* About content */
       .description,
       p {
         font-size: 1.6rem;
@@ -222,26 +224,21 @@
 
 @media screen and (max-width: 1024px) {
   .scroll-snap-container {
+    /* Picture (in "about content") */
     .picture {
       background-image: inherit;
     }
   }
-  .container {
-    .right {
-      width: 100%;
-    }
-  }
+
   .container {
     .absolute-content {
+      /* About content */
       .description {
         p {
           font-size: 1.4rem;
         }
-      }
-      .description {
-        & > div {
+        div {
           font-size: 1.2rem;
-          margin-top: 2rem;
           p {
             font-size: 1.2rem;
           }
@@ -250,6 +247,40 @@
           }
         }
       }
+
+      /* Contact content */
+      .texts {
+        h3 {
+          margin-bottom: 2rem;
+        }
+        p:nth-child(2) {
+          margin-bottom: 3rem;
+          font-size: 1.8rem;
+        }
+
+        /* mail */
+        .mail {
+          p {
+            font-size: 1.6rem;
+          }
+          img {
+            height: 1.2rem;
+          }
+        }
+
+        /* CV */
+        & > a {
+          img {
+            height: 1.6rem;
+          }
+          span {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .right {
+      width: 100%;
     }
   }
 }
@@ -257,17 +288,52 @@
 @media screen and (max-width: 768px) {
   .container {
     .absolute-content {
+      /* About content */
       .description {
         p {
           font-size: 1.2rem;
         }
-      }
-      .description {
-        & > div {
+        div {
           font-size: 1rem;
-          margin-top: 1rem;
           p {
             font-size: 1rem;
+          }
+        }
+      }
+
+      /* Contact content */
+      .texts {
+        h3 {
+          margin-bottom: 1.5rem;
+        }
+        p:nth-child(2) {
+          margin-bottom: 2rem;
+          font-size: 1.6rem;
+        }
+
+        /* mail */
+        .mail {
+          p {
+            font-size: 1.4rem;
+          }
+          img {
+            display: none;
+          }
+          div {
+            display: none;
+          }
+        }
+
+        /* CV */
+        & > a {
+          padding: 1rem;
+          margin-top: 4rem;
+
+          img {
+            height: 1.4rem;
+          }
+          span {
+            font-size: 1.2rem;
           }
         }
       }
@@ -279,9 +345,9 @@
   .container {
     .right {
       padding-left: 3rem;
-      top: 15vh;
     }
     .absolute-content {
+      /* About content */
       .description {
         padding-right: 3rem;
       }
@@ -295,18 +361,40 @@
       padding-left: 2rem;
     }
     .absolute-content {
+      /* About content */
       .description {
         padding-right: 2rem;
         p {
           font-size: 1rem;
           line-height: 1.8rem;
         }
-      }
-      .description {
-        & > div {
+        div {
           font-size: 0.8rem;
           p {
             font-size: 0.8rem;
+          }
+        }
+      }
+
+      /* Contact content */
+      .texts {
+        h3 {
+          margin-bottom: 1rem;
+        }
+        p:nth-child(2) {
+          margin-bottom: 1.5rem;
+          font-size: 1.4rem;
+        }
+
+        .logos-container,
+        .mail {
+          margin-top: 2rem;
+        }
+
+        /* mail */
+        .mail {
+          p {
+            font-size: 1.2rem;
           }
         }
       }
