@@ -76,12 +76,19 @@ h3 {
   h1 {
     font-size: 6rem;
     margin-bottom: 2rem;
+    @for $i from 1 through 14 {
+      span:nth-child(#{$i}) {
+        animation: none;
+      }
+    }
   }
   h2 {
     font-size: 2.4rem;
+    animation: none;
   }
   h3 {
     font-size: 3rem;
+    animation: none;
   }
 }
 

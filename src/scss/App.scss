@@ -290,6 +290,7 @@
     .absolute-content {
       /* About content */
       .description {
+        animation: none;
         p {
           font-size: 1.2rem;
         }
@@ -305,29 +306,39 @@
       .texts {
         h3 {
           margin-bottom: 1.5rem;
+          animation: none;
         }
         p:nth-child(2) {
           margin-bottom: 2rem;
           font-size: 1.6rem;
+          animation: none;
         }
 
         /* mail */
         .mail {
           p {
             font-size: 1.4rem;
+            animation: none;
           }
           img {
             display: none;
+            animation: none;
           }
           div {
             display: none;
           }
         }
 
+        /* icons */
+        .logos-container {
+          animation: none;
+        }
+
         /* CV */
         & > a {
           padding: 1rem;
           margin-top: 4rem;
+          animation: none;
 
           img {
             height: 1.4rem;
