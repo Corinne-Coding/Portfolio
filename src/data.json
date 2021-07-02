@@ -25,17 +25,74 @@
         {
           "ref": "project-1",
           "title": "To-do list",
-          "description": "Projet To do list, what else ?"
+          "technologies": {
+            "text": "Le projet To-do list est un projet Full-Stack réalisé avec :",
+            "list": ["React", "Node.js"]
+          },
+          "description": "Create boards, each one containing a list of tasks. Tasks can have the status \"to do\" or \"done\". Boards and tasks can be edited or removed.",
+          "links": {
+            "netlify": {
+              "url": "https://to-do-list-corinne.netlify.app/",
+              "text": "lien Netlify"
+            },
+            "githubClient": {
+              "url": "https://github.com/Corinne-Coding/To-Do-List-React-APP",
+              "text": "Dépôt GitHub - Client"
+            },
+
+            "githubServer": {
+              "url": "https://github.com/Corinne-Coding/To-do-List-express-API",
+              "text": "Dépôt GitHub - Server"
+            }
+          }
         },
         {
           "ref": "project-2",
           "title": "Airbnb",
-          "description": "Projet Airbnb, what else ?"
+          "technologies": {
+            "text": "The Chat project est réalisé avec :",
+            "list": ["React", "Node.js"]
+          },
+          "description": "to complete",
+          "links": {
+            "netlify": {
+              "url": "https://to-do-list-corinne.netlify.app/",
+              "text": "lien Netlify"
+            },
+            "githubClient": {
+              "url": "https://github.com/Corinne-Coding/To-Do-List-React-APP",
+              "text": "Dépôt GitHub - Client"
+            },
+
+            "githubServer": {
+              "url": "https://github.com/Corinne-Coding/To-do-List-express-API",
+              "text": "Dépôt GitHub - Server"
+            }
+          }
         },
         {
           "ref": "project-3",
           "title": "Memory game",
-          "description": "Projet memory game, what else ?"
+          "technologies": {
+            "text": "The Airbnb project est réalisé avec :",
+            "list": ["React", "Node.js"]
+          },
+          "description": "to complete",
+          "links": {
+            "netlify": {
+              "url": "https://to-do-list-corinne.netlify.app/",
+              "text": "lien Netlify"
+            },
+            "githubClient": {
+              "url": "https://github.com/Corinne-Coding/To-Do-List-React-APP",
+              "text": "Dépôt GitHub - Client"
+            },
+
+            "githubServer": {
+              "url": "https://github.com/Corinne-Coding/To-do-List-express-API",
+              "text": "Dépôt GitHub - Server"
+            }
+          }
         }
       ]
     }
@@ -67,17 +124,74 @@
         {
           "ref": "project-1",
           "title": "To-do list",
-          "description": "Projet To do list, what else ?"
+          "technologies": {
+            "text": "The To-do list project is a Full-Stack project made with :",
+            "list": ["React", "Node.js"]
+          },
+          "description": "Create boards, each one containing a list of tasks. Tasks can have the status \"to do\" or \"done\". Boards and tasks can be edited or removed.",
+          "links": {
+            "netlify": {
+              "url": "https://to-do-list-corinne.netlify.app/",
+              "text": "Netlify link"
+            },
+            "githubClient": {
+              "url": "https://github.com/Corinne-Coding/To-Do-List-React-APP",
+              "text": "GitHub repository - Client"
+            },
+
+            "githubServer": {
+              "url": "https://github.com/Corinne-Coding/To-do-List-express-API",
+              "text": "GitHub repository - Server"
+            }
+          }
         },
         {
           "ref": "project-2",
           "title": "Airbnb",
-          "description": "Projet Airbnb, what else ?"
+          "technologies": {
+            "text": "The Chat project is made with :",
+            "list": ["React", "Node.js"]
+          },
+          "description": "to complete",
+          "links": {
+            "netlify": {
+              "url": "https://to-do-list-corinne.netlify.app/",
+              "text": "Netlify link"
+            },
+            "githubClient": {
+              "url": "https://github.com/Corinne-Coding/To-Do-List-React-APP",
+              "text": "GitHub repository - Client"
+            },
+
+            "githubServer": {
+              "url": "https://github.com/Corinne-Coding/To-do-List-express-API",
+              "text": "GitHub repository - Server"
+            }
+          }
         },
         {
           "ref": "project-3",
           "title": "Memory game",
-          "description": "Projet memory game, what else ?"
+          "technologies": {
+            "text": "The Airbnb project is made with :",
+            "list": ["React", "Node.js"]
+          },
+          "description": "to complete",
+          "links": {
+            "netlify": {
+              "url": "https://to-do-list-corinne.netlify.app/",
+              "text": "Netlify link"
+            },
+            "githubClient": {
+              "url": "https://github.com/Corinne-Coding/To-Do-List-React-APP",
+              "text": "GitHub repository - Client"
+            },
+
+            "githubServer": {
+              "url": "https://github.com/Corinne-Coding/To-do-List-express-API",
+              "text": "GitHub repository - Server"
+            }
+          }
         }
       ]
     }

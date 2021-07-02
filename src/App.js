@@ -29,11 +29,14 @@ import download from "./img/download.svg";
 import profilePicture from "./img/me.jpg";
 
 function App() {
-  const [language, setLanguage] = useState(0);
-  // Languages : 0 = english (default) / 1 = french
   const [data, setData] = useState(json.english);
+  // Languages : 0 = english (default) / 1 = french
+  const [language, setLanguage] = useState(0);
+  // Content : "home" / "about" / "contact"
   const [content, setContent] = useState("home");
+  // Copy email
   const [copy, setCopy] = useState(false);
+  // Scroll to a project
   const [, setProjectNumber] = useState(0);
 
   useEffect(() => {
@@ -66,7 +69,7 @@ function App() {
       <div className="scroll-snap-container">
         {/* PRESENTING */}
         <div className={content === "about" ? "picture" : "no-picture"}>
-          <section className="container snap-element ">
+          <section className="container snap-element">
             {/* Languages & Music icons */}
             <div className="lang-music-container">
               {language === 0 ? (
@@ -117,9 +120,9 @@ function App() {
               <div className="absolute-content right">
                 <h3>{data.contentTitles.about}</h3>
                 <div className="description">
-                  {data.description.map((text) => {
+                  {data.description.map((text, index) => {
                     return (
-                      <p>
+                      <p key={index}>
                         {text}
                         <br />
                         <br />
@@ -255,11 +258,14 @@ function App() {
         {data.projects.list.map((item, index) => {
           return (
             <Project
-              key={item.id}
+              key={index}
               item={item}
               index={index}
               title="Next project"
               setProjectNumber={setProjectNumber}
+              lastProject={data.projects.list.length - 1}
+              setLanguage={setLanguage}
+              language={language}
             />
           );
         })}
