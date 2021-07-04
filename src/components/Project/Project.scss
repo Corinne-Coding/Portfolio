@@ -49,23 +49,13 @@ $colors: project-1 white, project-2 blue, project-3 orange, project-4 green;
     background-color: $smoke-light-color;
   }
 
-  .project-pictures {
-    display: flex;
-    align-items: center;
-    width: 60%;
-
-    img {
-      width: 100%;
-    }
-  }
-
   .texts {
     display: flex;
     flex-direction: column;
     width: 30%;
-
     color: $sky-color;
     font-size: 1.8rem;
+    padding-right: 2rem;
 
     p {
       text-align: justify;

@@ -3,9 +3,9 @@ import "./Project.scss";
 
 // Components
 import AnimatedArrow from "../AnimatedArrow/AnimatedArrow";
+import Carrousel from "../Carrousel/Carrousel";
 
-// Images
-import toDo01 from "../../img/to-do-list-project-01.png";
+// Carrousel
 
 const Project = ({
   item,
@@ -16,7 +16,7 @@ const Project = ({
   title,
   setProjectNumber,
 }) => {
-  console.log(item);
+  // console.log(item);
 
   const handleLanguage = () => {
     if (language === 0) {
@@ -45,9 +45,7 @@ const Project = ({
 
       <div className="project-container">
         {/* Project picture */}
-        <div className="project-pictures">
-          <img src={toDo01} alt="to-do list" />
-        </div>
+        <Carrousel href={item.href} />
 
         {/* project texts */}
         <div className="texts">

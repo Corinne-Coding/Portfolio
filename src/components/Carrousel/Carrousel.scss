@@ -1,0 +1,60 @@
+// -------------- //
+// Carrousel.js SCSS //
+// -------------- //
+
+@import "../../scss/variables.scss";
+
+.project-pictures {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  padding: 0 40px;
+  margin-top: 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+
+  .carrousel-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+
+    img {
+      width: 100%;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+    }
+  }
+
+  .circle {
+    height: 4rem;
+    width: 4rem;
+    background-color: $smoke-dark-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.4rem;
+
+    &:hover {
+      background-color: $smoke-dark-color-opacity;
+    }
+  }
+
+  .circle-left {
+    top: 50%;
+    left: 2rem;
+    transform: translate(0, -50%);
+  }
+
+  .circle-right {
+    top: 50%;
+    right: 2rem;
+    transform: translate(0, -50%);
+  }
+}

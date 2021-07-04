@@ -123,6 +123,7 @@
       "list": [
         {
           "ref": "project-1",
+          "href": "to-do-list",
           "title": "To-do list",
           "technologies": {
             "text": "The To-do list project is a Full-Stack project made with :",
@@ -147,6 +148,7 @@
         },
         {
           "ref": "project-2",
+          "href": "airbnb",
           "title": "Airbnb",
           "technologies": {
             "text": "The Chat project is made with :",
@@ -171,6 +173,7 @@
         },
         {
           "ref": "project-3",
+          "href": "memory-game",
           "title": "Memory game",
           "technologies": {
             "text": "The Airbnb project is made with :",
