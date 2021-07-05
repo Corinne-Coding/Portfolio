@@ -1,10 +1,10 @@
 // Scss
-import "./Logo.scss";
+import "./ContactLogo.scss";
 
 // Pictures
-import linkedin from "../../img/linkedin.svg";
-import github from "../../img/github.svg";
-import email from "../../img/email.svg";
+import linkedin from "../../img/icons/linkedin.svg";
+import github from "../../img/icons/github.svg";
+import email from "../../img/icons/email.svg";
 
 const Logo = ({ name, link }) => {
   return (

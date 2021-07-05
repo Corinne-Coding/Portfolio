@@ -4,11 +4,19 @@
 
 @import "../../scss/variables.scss";
 
-$colors: project-1 white, project-2 blue, project-3 orange, project-4 green;
+$bgColors: project-1 $white-color, project-2 $sky-color;
 
-@each $color in $colors {
-  .#{nth($color, 1)} {
-    background-color: nth($color, 2);
+@each $bgColor in $bgColors {
+  .#{nth($bgColor, 1)} {
+    background-color: nth($bgColor, 2);
+  }
+}
+
+$textColors: project-1 $black-color, project-2 $white-color;
+
+@each $textColor in $textColors {
+  .#{nth($textColor, 1)} {
+    color: nth($textColor, 2);
   }
 }
 

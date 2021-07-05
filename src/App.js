@@ -4,26 +4,26 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 // SCSS
 import "./scss/App.scss";
 
-// Data
-import json from "./data.json";
-
-// Particles
-/* From :  https://www.npmjs.com/package/react-particles-js */
-import Particles from "react-particles-js";
-
 // Components
 import AnimatedArrow from "./components/AnimatedArrow/AnimatedArrow";
 import Audio from "./components/Audio/Audio";
 import ButtonMenu from "./components/ButtonMenu/ButtonMenu";
 import Flag from "./components/Flag/Flag";
 import Project from "./components/Project/Project";
-import Logo from "./components/Logo/Logo";
+import Logo from "./components/ContactLogo/ContactLogo";
+
+// Data
+import json from "./data.json";
 
 // Icons & pictures
-import copyImage from "./img/copy.svg";
-import cvENG from "./img/CV.png";
-import cvFR from "./img/CV.png";
-import download from "./img/download.svg";
+import copyImage from "./img/icons/copy.svg";
+import cvENG from "./img/CV/CV.png";
+import cvFR from "./img/CV/CV.png";
+import download from "./img/icons/download.svg";
+
+// Particles
+/* From :  https://www.npmjs.com/package/react-particles-js */
+import Particles from "react-particles-js";
 
 // Pictures
 import profilePicture from "./img/me.jpg";
@@ -40,7 +40,7 @@ function App() {
   const [, setProjectNumber] = useState(0);
 
   useEffect(() => {
-    // Function to load content in right language
+    // Function to load content in chosen language
     const loadData = () => {
       if (language === 0) {
         setData(json.english);
@@ -205,6 +205,7 @@ function App() {
               title={data.projects.title}
               index={0}
               setProjectNumber={setProjectNumber}
+              color="light"
             />
 
             {/* Particles */}
@@ -275,19 +276,3 @@ function App() {
 }
 
 export default App;
-
-/*
-
-          Icons made by
-          <a href="https://www.freepik.com" title="Freepik">
-            Freepik
-          </a>
-          from
-         
-
-          https://www.flaticon.com/authors/pixel-buddha
-          https://www.flaticon.com/authors/becris
-
-          https://www.youtube.com/watch?v=8N_SYOXhmW4&list=RDiR5uBjqEKvU&index=8
-
-          */

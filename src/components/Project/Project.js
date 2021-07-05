@@ -16,8 +16,6 @@ const Project = ({
   title,
   setProjectNumber,
 }) => {
-  // console.log(item);
-
   const handleLanguage = () => {
     if (language === 0) {
       setLanguage(1);
@@ -37,9 +35,9 @@ const Project = ({
       {/* Absolute language */}
       <div className="absolute absolute-languages">
         {language === 0 ? (
-          <span onClick={handleLanguage}>FRANÇAIS</span>
+          <span onClick={handleLanguage}>Français</span>
         ) : (
-          <span onClick={handleLanguage}>ENGLISH</span>
+          <span onClick={handleLanguage}>English</span>
         )}
       </div>
 
@@ -100,6 +98,7 @@ const Project = ({
           title={title}
           index={index + 1}
           setProjectNumber={setProjectNumber}
+          color="dark"
         />
       )}
     </section>

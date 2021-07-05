@@ -2,8 +2,8 @@
 import "./Flag.scss";
 
 // Icons
-import frenchFlag from "../../img/france.svg";
-import englishFlag from "../../img/united-kingdom.svg";
+import frenchFlag from "../../img/icons/france.svg";
+import englishFlag from "../../img/icons/united-kingdom.svg";
 
 const Flag = ({ language, setLanguage, flag }) => {
   return (

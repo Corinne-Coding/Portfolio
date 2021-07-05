@@ -3,8 +3,8 @@ import { useState } from "react";
 import "./Audio.scss";
 
 // Icons
-import soundOn from "../../img/sound-on.svg";
-import soundOff from "../../img/sound-off.svg";
+import soundOn from "../../img/icons/sound-on.svg";
+import soundOff from "../../img/icons/sound-off.svg";
 
 // Music
 import stressabbau from "../../music/stressabbau.mp3";

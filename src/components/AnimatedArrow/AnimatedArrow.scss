@@ -6,7 +6,7 @@
 
 .animated-arrow {
   position: absolute;
-  bottom: 4rem;
+  bottom: 5rem;
   left: 50%;
   transform: translate(-50%);
   display: flex;
@@ -16,13 +16,19 @@
   cursor: pointer;
 }
 
+.light {
+  color: $smoke-color;
+}
+.dark {
+  color: $sky-color;
+}
+
 .animated-arrow img {
   height: 3rem;
   animation: goDown 2s infinite;
 }
 
 .animated-arrow p {
-  color: $smoke-color;
   font-size: 1.4rem;
 }
 

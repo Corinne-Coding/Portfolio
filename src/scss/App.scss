@@ -32,18 +32,13 @@
     background-image: url(../img/me.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: $sky-color;
   }
 }
 
 .container {
   height: 100vh;
   position: relative;
-  background: radial-gradient(
-    circle,
-    $sky-color-opacity 0%,
-    $sky-dark-color-opacity 100%
-  );
+  // background: radial-gradient(circle, $sky-color 0%, blue 100%);
 
   /* Languages & Music icons */
   .lang-music-container {
