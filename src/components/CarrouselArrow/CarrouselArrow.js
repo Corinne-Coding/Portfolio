@@ -1,11 +1,12 @@
+// Scss
 import "./CarrouselArrow.scss";
 
 const CarrouselArrow = ({
   displayedPicture,
-  setDisplayedPicture,
   href,
-  tab,
   orientation,
+  setDisplayedPicture,
+  tab,
 }) => {
   const scrollToLeft = () => {
     if (displayedPicture === 0) {

@@ -23,14 +23,15 @@ import chatApp04 from "../../img/chatApp/chat-app-04.png";
 import chatApp05 from "../../img/chatApp/chat-app-05.png";
 import chatApp06 from "../../img/chatApp/chat-app-06.png";
 
-const toDoImages = [toDo02, toDo03, toDo04, toDo01, toDo05, toDo06];
+// Array images
+const toDoImages = [toDo06, toDo02, toDo03, toDo04, toDo01, toDo05];
 const chatAppImages = [
+  chatApp06,
   chatApp01,
   chatApp02,
   chatApp03,
   chatApp04,
   chatApp05,
-  chatApp06,
 ];
 
 const Carrousel = ({ href }) => {

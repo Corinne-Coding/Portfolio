@@ -10,10 +10,10 @@ const Project = ({
   item,
   index,
   language,
-  setLanguage,
   lastProject,
-  title,
+  setLanguage,
   setProjectNumber,
+  title,
 }) => {
   const handleLanguage = () => {
     if (language === 0) {
@@ -44,7 +44,7 @@ const Project = ({
         {/* Carrousel */}
         <Carrousel href={item.href} />
 
-        {/* project texts */}
+        {/* Project texts */}
         <div className="texts">
           <div>
             <h4>{item.title}</h4>

@@ -33,36 +33,6 @@
       scroll-snap-align: start;
     }
   }
-
-  .circle {
-    height: 4rem;
-    width: 4rem;
-    background-color: $smoke-dark-color;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1.4rem;
-
-    &:hover {
-      background-color: $smoke-dark-color-opacity;
-    }
-  }
-
-  .circle-left {
-    top: 50%;
-    left: 2rem;
-    transform: translate(0, -50%);
-  }
-
-  .circle-right {
-    top: 50%;
-    right: 2rem;
-    transform: translate(0, -50%);
-  }
 }
 
 /* ------------------------------------------ */
@@ -72,11 +42,6 @@
 @media screen and (max-width: 1200px) {
   .project-pictures {
     width: 60%;
-
-    .circle {
-      height: 3.5rem;
-      width: 3.5rem;
-    }
   }
 }
 
@@ -84,19 +49,4 @@
   .project-pictures {
     display: none;
   }
-}
-
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 576px) {
-}
-
-@media screen and (max-width: 480px) {
-}
-
-@media screen and (max-width: 414px) {
-}
-
-@media screen and (max-width: 360px) {
 }

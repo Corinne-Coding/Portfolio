@@ -1,7 +1,4 @@
-// -------------- //
-// Button.js SCSS //
-// -------------- //
-
+// SCSS
 import "./ButtonMenu.scss";
 
 const ButtonMenu = ({ content, item, setContent }) => {

@@ -1,7 +1,7 @@
 // SCSS
 import "./ProjectLink.scss";
 
-const ProjectLink = ({ url, text, icon }) => {
+const ProjectLink = ({ icon, text, url }) => {
   return (
     <a href={url} target="_blank" rel="noreferrer">
       <i

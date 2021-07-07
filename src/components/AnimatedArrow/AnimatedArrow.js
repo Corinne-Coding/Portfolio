@@ -2,10 +2,10 @@
 import "./AnimatedArrow.scss";
 
 // Icon
-import DownArrowLight from "../../img/icons/down-arrow-light.svg";
 import DownArrowDark from "../../img/icons/down-arrow-dark.svg";
+import DownArrowLight from "../../img/icons/down-arrow-light.svg";
 
-const AnimatedArrow = ({ title, setProjectNumber, index, color }) => {
+const AnimatedArrow = ({ color, index, setProjectNumber, title }) => {
   return (
     <a
       className={`animated-arrow ${color}`}

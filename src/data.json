@@ -11,12 +11,11 @@
       "soundOff": "Pour se relaxer 🎶"
     },
     "contentTitles": {
-      "about": "Qui suis-je ?",
-      "contact": "Pour me contacter ..."
+      "about": "Qui suis-je ?"
     },
     "description": [
-      "Après avoir travaillé 8 ans dans l'Éducation nationale en tant que professeur des écoles, j'ai décidé de changer d'univers et de me diriger vers le développement Web & Mobile.",
-      "J'ai suivi le bootcamp du Reacteur durant l'été 2019, et j'y ai été ensuite recrutée comme professeur assistante. J'y suis désormais formatrice JavaScript / React / React Native.",
+      "Après avoir travaillé pendant 8 ans dans l'Éducation nationale en tant que professeur des écoles, j'ai décidé de changer d'univers et de me diriger vers le développement Web & Mobile.",
+      "J'ai suivi le bootcamp du Reacteur durant l'été 2019, et j'y ai été ensuite recrutée comme professeur assistante. J'y suis désormais formatrice JavaScript / React / React Native. Je souhaite maintenant quitter le domaine de la formation pour me consacrer à un travail orienté développement Web & Mobile.",
       "Depuis ma formation au Reacteur, je continue de me former en autodidacte afin d'améliorer mes compétences."
     ],
     "projects": {
@@ -29,7 +28,7 @@
             "text": "Le projet To-do list est un projet Full-Stack réalisé avec :",
             "list": ["React", "Node.js"]
           },
-          "description": "Creation de tableaux, chacun contenant une liste de tâches. Les tâches peuvent avoir le statut \"to do\" ou \"done\". Les tableaux et les tâches peuvent être modifiés ou supprimés.",
+          "description": "Création de tableaux, chacun contenant une liste de tâches. Les tâches peuvent avoir le statut \"to do\" ou \"done\". Les tableaux et les tâches peuvent être modifiés ou supprimés.",
           "links": {
             "netlify": {
               "url": "https://to-do-list-corinne.netlify.app/",
@@ -39,7 +38,6 @@
               "url": "https://github.com/Corinne-Coding/To-Do-List-React-APP",
               "text": "Dépôt GitHub - Client"
             },
-
             "githubServer": {
               "url": "https://github.com/Corinne-Coding/To-do-List-express-API",
               "text": "Dépôt GitHub - Server"
@@ -87,12 +85,11 @@
       "soundOff": "Relaxing with music 🎶"
     },
     "contentTitles": {
-      "about": "Who Am I ?",
-      "contact": "To contact me ..."
+      "about": "Who Am I ?"
     },
     "description": [
       "After working for 8 years in Éducation nationale as a school teacher, I decided to change universe and move towards Web & Mobile development.",
-      "I followed the Reacteur bootcamp during the summer of 2019, and I was then recruited there as a teacher assistant. I am now a JavaScript / React / React Native trainer.",
+      "I followed the Reacteur bootcamp during the summer of 2019, and I was then recruited there as a teacher assistant. I am now a JavaScript / React / React Native trainer. I now wish to leave the field of training to devote myself to a work oriented Web & Mobile development.",
       "Since my training at Le Reacteur, I continue to train myself to improve my skills."
     ],
     "projects": {
@@ -116,7 +113,6 @@
               "url": "https://github.com/Corinne-Coding/To-Do-List-React-APP",
               "text": "GitHub repository - Client"
             },
-
             "githubServer": {
               "url": "https://github.com/Corinne-Coding/To-do-List-express-API",
               "text": "GitHub repository - Server"

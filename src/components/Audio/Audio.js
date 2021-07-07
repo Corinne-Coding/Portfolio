@@ -1,10 +1,11 @@
 import { useState } from "react";
 
+// SCSS
 import "./Audio.scss";
 
 // Icons
-import soundOn from "../../img/icons/sound-on.svg";
 import soundOff from "../../img/icons/sound-off.svg";
+import soundOn from "../../img/icons/sound-on.svg";
 
 // Music
 import stressabbau from "../../music/stressabbau.mp3";

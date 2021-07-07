@@ -9,8 +9,8 @@ import AnimatedArrow from "./components/AnimatedArrow/AnimatedArrow";
 import Audio from "./components/Audio/Audio";
 import ButtonMenu from "./components/ButtonMenu/ButtonMenu";
 import Flag from "./components/Flag/Flag";
-import Project from "./components/Project/Project";
 import Logo from "./components/ContactLogo/ContactLogo";
+import Project from "./components/Project/Project";
 
 // Data
 import json from "./data.json";
@@ -234,20 +234,6 @@ function App() {
                     random: true,
                     speed: 0.3,
                     out_mode: "out",
-                  },
-                },
-                interactivity: {
-                  events: {
-                    onhover: {
-                      enable: true,
-                      mode: "repulse",
-                    },
-                  },
-                  modes: {
-                    repulse: {
-                      distance: 80,
-                      duration: 3,
-                    },
                   },
                 },
               }}
