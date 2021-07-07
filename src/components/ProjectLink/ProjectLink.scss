@@ -1,0 +1,16 @@
+// -------------- //
+// ProjectLink.js SCSS //
+// -------------- //
+
+@import "../../scss/variables.scss";
+
+a {
+  color: $sky-color;
+  margin-bottom: 1rem;
+
+  i {
+    color: $black-color;
+    width: 4rem;
+    text-align: center;
+  }
+}

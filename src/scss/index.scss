@@ -58,7 +58,6 @@ h3 {
 
 h4 {
   font-size: 7rem;
-  // font-weight: 300;
   color: $fire-color;
   margin-bottom: 3rem;
 }
@@ -66,6 +65,12 @@ h4 {
 /* ------------------------------------------ */
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  h4 {
+    font-size: 6rem;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   h1 {
@@ -76,6 +81,9 @@ h4 {
   }
   h3 {
     font-size: 3.5rem;
+  }
+  h4 {
+    font-size: 5rem;
   }
 }
 
@@ -97,6 +105,9 @@ h4 {
     font-size: 3rem;
     animation: none;
   }
+  h4 {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -110,6 +121,9 @@ h4 {
   h3 {
     font-size: 2.6rem;
   }
+  h4 {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -122,6 +136,9 @@ h4 {
   h3 {
     font-size: 2.2rem;
   }
+  h4 {
+    font-size: 3.5rem;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -133,6 +150,9 @@ h4 {
   }
   h3 {
     font-size: 2rem;
+  }
+  h4 {
+    font-size: 3rem;
   }
 }
 

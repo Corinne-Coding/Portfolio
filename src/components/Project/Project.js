@@ -4,8 +4,7 @@ import "./Project.scss";
 // Components
 import AnimatedArrow from "../AnimatedArrow/AnimatedArrow";
 import Carrousel from "../Carrousel/Carrousel";
-
-// Carrousel
+import ProjectLink from "../ProjectLink/ProjectLink";
 
 const Project = ({
   item,
@@ -42,51 +41,48 @@ const Project = ({
       </div>
 
       <div className="project-container">
-        {/* Project picture */}
+        {/* Carrousel */}
         <Carrousel href={item.href} />
 
         {/* project texts */}
         <div className="texts">
-          <h4>{item.title}</h4>
-          <p>{item.technologies.text}</p>
-          <ul>
-            {item.technologies.list.map((line) => {
-              return <li key={line}>{line}</li>;
-            })}
-          </ul>
+          <div>
+            <h4>{item.title}</h4>
+            <p>{item.technologies.text}</p>
+            <ul>
+              {item.technologies.list.map((line) => {
+                return <li key={line}>{line}</li>;
+              })}
+            </ul>
 
-          <p>{item.description}</p>
+            <p>{item.description}</p>
+          </div>
 
           <div className="line"></div>
 
           <div className="links">
             {item.links.netlify && (
-              <a href={item.links.netlify.url} target="_blank" rel="noreferrer">
-                <i className="far fa-eye"></i>
-                <span>{item.links.netlify.text}</span>
-              </a>
+              <ProjectLink
+                url={item.links.netlify.url}
+                text={item.links.netlify.text}
+                icon="eye"
+              />
             )}
 
             {item.links.githubClient && (
-              <a
-                href={item.links.githubClient.url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fas fa-code"></i>
-                <span>{item.links.githubClient.text}</span>
-              </a>
+              <ProjectLink
+                url={item.links.githubClient.url}
+                text={item.links.githubClient.text}
+                icon="code"
+              />
             )}
 
             {item.links.githubServer && (
-              <a
-                href={item.links.githubServer.url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fas fa-code"></i>
-                <span>{item.links.githubServer.text}</span>
-              </a>
+              <ProjectLink
+                url={item.links.githubServer.url}
+                text={item.links.githubServer.text}
+                icon="code"
+              />
             )}
           </div>
         </div>

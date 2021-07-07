@@ -3,6 +3,9 @@ import { useState } from "react";
 // SCSS
 import "./Carrousel.scss";
 
+// Components
+import CarrouselArrow from "../CarrouselArrow/CarrouselArrow";
+
 // Images
 /* To do project */
 import toDo01 from "../../img/toDoProject/to-do-list-project-01.png";
@@ -59,33 +62,21 @@ const Carrousel = ({ href }) => {
         })}
       </div>
 
-      <a
-        className="circle circle-left"
-        href={`#${href}-${displayedPicture}`}
-        onClick={() => {
-          if (displayedPicture === 0) {
-            setDisplayedPicture(tab.length - 1);
-          } else {
-            setDisplayedPicture(displayedPicture - 1);
-          }
-        }}
-      >
-        <i className="fas fa-arrow-left"></i>
-      </a>
+      <CarrouselArrow
+        displayedPicture={displayedPicture}
+        setDisplayedPicture={setDisplayedPicture}
+        href={href}
+        tab={tab}
+        orientation={"right"}
+      />
 
-      <a
-        className="circle circle-right"
-        href={`#${href}-${displayedPicture}`}
-        onClick={() => {
-          if (displayedPicture === tab.length - 1) {
-            setDisplayedPicture(0);
-          } else {
-            setDisplayedPicture(displayedPicture + 1);
-          }
-        }}
-      >
-        <i className="fas fa-arrow-right"></i>
-      </a>
+      <CarrouselArrow
+        displayedPicture={displayedPicture}
+        setDisplayedPicture={setDisplayedPicture}
+        href={href}
+        tab={tab}
+        orientation={"left"}
+      />
     </div>
   );
 };

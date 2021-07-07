@@ -8,9 +8,7 @@
   position: relative;
   width: 70%;
   height: 100%;
-  padding: 0 40px;
-  margin-top: 40px;
-  margin: auto;
+  padding: 0 4rem;
   display: flex;
   align-items: center;
 
@@ -65,4 +63,40 @@
     right: 2rem;
     transform: translate(0, -50%);
   }
+}
+
+/* ------------------------------------------ */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  .project-pictures {
+    width: 60%;
+
+    .circle {
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project-pictures {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 414px) {
+}
+
+@media screen and (max-width: 360px) {
 }
