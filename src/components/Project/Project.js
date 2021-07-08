@@ -84,6 +84,14 @@ const Project = ({
                 icon="code"
               />
             )}
+
+            {item.links.qrcode && (
+              <ProjectLink
+                url={item.links.qrcode.url}
+                text={item.links.qrcode.text}
+                icon="qrcode"
+              />
+            )}
           </div>
         </div>
       </div>

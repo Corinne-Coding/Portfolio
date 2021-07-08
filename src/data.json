@@ -68,6 +68,26 @@
               "text": "Dépôt GitHub - Server"
             }
           }
+        },
+        {
+          "ref": "project-3",
+          "href": "memory-game",
+          "title": "Memory Game",
+          "technologies": {
+            "text": "Le projet Memory Game est un projet mobile réalisé avec :",
+            "list": ["Expo"]
+          },
+          "description": "C'est un jeu simple dans lequel les pairs trouvées et les coups sont comptés.",
+          "links": {
+            "qrcode": {
+              "url": "https://expo.io/@corinne-coding/memory-game",
+              "text": "QRCode"
+            },
+            "githubClient": {
+              "url": "https://github.com/Corinne-Coding/Memory-Game-RN",
+              "text": "Dépôt GitHub"
+            }
+          }
         }
       ]
     }
@@ -141,6 +161,26 @@
             "githubServer": {
               "url": "https://github.com/Corinne-Coding/Socket-server",
               "text": "GitHub repository - Server"
+            }
+          }
+        },
+        {
+          "ref": "project-3",
+          "href": "memory-game",
+          "title": "Memory Game",
+          "technologies": {
+            "text": "The Memory Game project is a mobile project made with :",
+            "list": ["Expo"]
+          },
+          "description": "It is a simple game in which the pairs found and the moves are counted.",
+          "links": {
+            "qrcode": {
+              "url": "https://expo.io/@corinne-coding/memory-game",
+              "text": "QRCode"
+            },
+            "githubClient": {
+              "url": "https://github.com/Corinne-Coding/Memory-Game-RN",
+              "text": "GitHub repository"
             }
           }
         }

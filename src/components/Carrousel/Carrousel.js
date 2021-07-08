@@ -23,6 +23,11 @@ import chatApp04 from "../../img/chatApp/chat-app-04.png";
 import chatApp05 from "../../img/chatApp/chat-app-05.png";
 import chatApp06 from "../../img/chatApp/chat-app-06.png";
 
+/* Memory game project */
+import memory01 from "../../img/memoryGame/memory-game-01.png";
+import memory02 from "../../img/memoryGame/memory-game-02.png";
+import memory03 from "../../img/memoryGame/memory-game-03.png";
+
 // Array images
 const toDoImages = [toDo06, toDo02, toDo03, toDo04, toDo01, toDo05];
 const chatAppImages = [
@@ -33,6 +38,7 @@ const chatAppImages = [
   chatApp04,
   chatApp05,
 ];
+const memoryImages = [memory01, memory02, memory03];
 
 const Carrousel = ({ href }) => {
   // Load the tab images
@@ -41,8 +47,12 @@ const Carrousel = ({ href }) => {
       ? toDoImages
       : href === "chat-app"
       ? chatAppImages
+      : href === "memory-game"
+      ? memoryImages
       : []
   );
+
+  console.log(href);
 
   // Displayed image in the carrousel
   const [displayedPicture, setDisplayedPicture] = useState(0);
@@ -51,6 +61,7 @@ const Carrousel = ({ href }) => {
     <div className="project-pictures">
       <div className="carrousel-container">
         {tab.map((item, index) => {
+          console.log(item);
           return (
             <img
               key={index}
