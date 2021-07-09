@@ -17,8 +17,8 @@ import json from "./data.json";
 
 // Icons & pictures
 import copyImage from "./img/icons/copy.svg";
-import cvENG from "./img/CV/CV.png";
-import cvFR from "./img/CV/CV.png";
+import cvENG from "./img/CV/CV-Corinne-Pradier-fr.png";
+import cvFR from "./img/CV/CV-Corinne-Pradier-eng.png";
 import download from "./img/icons/download.svg";
 
 // Particles
