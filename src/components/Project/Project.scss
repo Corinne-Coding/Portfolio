@@ -5,7 +5,9 @@
 @import "../../scss/variables.scss";
 
 // Background colors for each project
-$bgColors: project-1 $white-color, project-2 $sky-color;
+$bgColors: project-1 $white-color, project-2 $sky-color, project-3 $white-color,
+  project-4 $sky-color, project-5 $white-color, project-6 $sky-color,
+  project-7 $white-color, project-8 $sky-color;
 
 @each $bgColor in $bgColors {
   .#{nth($bgColor, 1)} {
@@ -14,7 +16,9 @@ $bgColors: project-1 $white-color, project-2 $sky-color;
 }
 
 // Text colors for each project
-$textColors: project-1 $black-color, project-2 $white-color;
+$textColors: project-1 $black-color, project-2 $white-color,
+  project-3 $black-color, project-4 $white-color, project-5 $black-color,
+  project-6 $white-color, project-7 $black-color, project-8 $white-color;
 
 @each $textColor in $textColors {
   .#{nth($textColor, 1)} {

@@ -77,7 +77,7 @@
             "text": "Le projet Memory Game est un projet mobile réalisé avec :",
             "list": ["Expo"]
           },
-          "description": "C'est un jeu simple dans lequel les pairs trouvées et les coups sont comptés.",
+          "description": "C'est un jeu simple dans lequel les pairs trouvées et les coups sont comptés. Le bouton \"reset\" permet au joueur de recommencer une partie. Le téléphone vibre lorsque la partie est gagnée.",
           "links": {
             "qrcode": {
               "url": "https://expo.io/@corinne-coding/memory-game",
@@ -172,7 +172,7 @@
             "text": "The Memory Game project is a mobile project made with :",
             "list": ["Expo"]
           },
-          "description": "It is a simple game in which the pairs found and the moves are counted.",
+          "description": "It is a simple game in which the pairs found and the moves are counted. The \"reset\" button allows player to restart a game. The phone vibrates when the game is won.",
           "links": {
             "qrcode": {
               "url": "https://expo.io/@corinne-coding/memory-game",

@@ -38,7 +38,6 @@
 .container {
   height: 100vh;
   position: relative;
-  // background: radial-gradient(circle, $sky-color 0%, blue 100%);
 
   /* Languages & Music icons */
   .lang-music-container {
@@ -169,6 +168,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 5rem;
+        color: $white-color;
 
         img {
           height: 2rem;
@@ -416,10 +416,4 @@
       }
     }
   }
-}
-
-@media screen and (max-width: 414px) {
-}
-
-@media screen and (max-width: 360px) {
 }
