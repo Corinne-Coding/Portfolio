@@ -9,7 +9,7 @@ import AnimatedArrow from "./components/AnimatedArrow/AnimatedArrow";
 import Audio from "./components/Audio/Audio";
 import ButtonMenu from "./components/ButtonMenu/ButtonMenu";
 import Flag from "./components/Flag/Flag";
-import Logo from "./components/ContactLogo/ContactLogo";
+import ContactLogo from "./components/ContactLogo/ContactLogo";
 import Project from "./components/Project/Project";
 
 // Data
@@ -17,8 +17,7 @@ import json from "./data.json";
 
 // Icons & pictures
 import copyImage from "./img/icons/copy.svg";
-import cvENG from "./img/CV/CV-Corinne-Pradier-eng.pdf";
-import cvFR from "./img/CV/CV-Corinne-Pradier-fr.pdf";
+import cvFR from "./img/CV/CV-Corinne-Pradier-fr-v2.pdf";
 import download from "./img/icons/download.svg";
 
 // Particles
@@ -158,7 +157,11 @@ function App() {
 
                   {/* mail */}
                   <div className="mail">
-                    <p>pradier.corinne@gmail.com</p>
+                    <ContactLogo
+                      text="pradier.corinne@gmail.com"
+                      link="mailto:pradier.corinne@gmail.com"
+                    />
+
                     <CopyToClipboard
                       text={copy}
                       onCopy={() => {
@@ -172,22 +175,18 @@ function App() {
 
                   {/* icons  */}
                   <div className="logos-container">
-                    <Logo
+                    <ContactLogo
                       name="linkedin"
                       link="https://www.linkedin.com/in/corinne-pradier-6610201b2/"
                     />
-                    <Logo
+                    <ContactLogo
                       name="github"
                       link="https://github.com/Corinne-Coding"
-                    />
-                    <Logo
-                      name="email"
-                      link="mailto:pradier.corinne@gmail.com"
                     />
                   </div>
 
                   {/* CV */}
-                  <a href={language === 0 ? cvENG : cvFR} download>
+                  <a href={cvFR} download>
                     <span>
                       {language === 0
                         ? `Download my CV :`
