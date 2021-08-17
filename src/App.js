@@ -163,9 +163,9 @@ function App() {
                     />
 
                     <CopyToClipboard
-                      text={copy}
+                      text={"pradier.corinne@gmail.com"}
                       onCopy={() => {
-                        setCopy("pradier.corinne@gmail.com");
+                        setCopy(true);
                       }}
                     >
                       <img src={copyImage} alt="copy logo" />
