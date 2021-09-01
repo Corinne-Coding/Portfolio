@@ -1,14 +1,16 @@
-<h1 align="center">✨ Portfolio ✨</h1>
+<h1 align="center">✨ Portfolio - old ✨</h1>
 
 <br />
 
-Click on this link to take a look at the project : **https://corinne-pradier.netlify.app/**
+This project is my previous Portfolio.
+
+Take a look at the new one by following this link : [https://corinne-pradier.netlify.app/](https://corinne-pradier.netlify.app/).
 
 <br />
 
 ## About this project
 
-The Portfolio Project is a **frontend** project made in 2021 with **React** and **Sass**.
+The Portfolio Project is a **frontend** project made in early 2021 with **React** and **Sass**.
 
 **Packages & libraries used :**
 
